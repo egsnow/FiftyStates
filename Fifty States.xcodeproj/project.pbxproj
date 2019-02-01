@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0AE15822024F400004CA20 /* StateDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0AE15722024F400004CA20 /* StateDetails.swift */; };
+		0F0AE15A2204DACA0004CA20 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0AE1592204DACA0004CA20 /* WebVC.swift */; };
 		0F43D72921FA464D00D10702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43D72821FA464D00D10702 /* AppDelegate.swift */; };
 		0F43D72B21FA464D00D10702 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43D72A21FA464D00D10702 /* HomePageVC.swift */; };
 		0F43D72E21FA464D00D10702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F43D72C21FA464D00D10702 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F0AE15722024F400004CA20 /* StateDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetails.swift; sourceTree = "<group>"; };
+		0F0AE1592204DACA0004CA20 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 		0F43D72521FA464D00D10702 /* Fifty States.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fifty States.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F43D72821FA464D00D10702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F43D72A21FA464D00D10702 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
@@ -58,11 +62,13 @@
 		0F43D72721FA464D00D10702 /* Fifty States */ = {
 			isa = PBXGroup;
 			children = (
-				0F43D72821FA464D00D10702 /* AppDelegate.swift */,
+				0F43D72C21FA464D00D10702 /* Main.storyboard */,
 				0F43D72A21FA464D00D10702 /* HomePageVC.swift */,
 				0F43D73A21FA49EF00D10702 /* StatesListTableVC.swift */,
-				0F43D72C21FA464D00D10702 /* Main.storyboard */,
 				0F43D73C21FA571D00D10702 /* StateInfoVC.swift */,
+				0F0AE15722024F400004CA20 /* StateDetails.swift */,
+				0F0AE1592204DACA0004CA20 /* WebVC.swift */,
+				0F43D72821FA464D00D10702 /* AppDelegate.swift */,
 				0F43D72F21FA464F00D10702 /* Assets.xcassets */,
 				0F43D73121FA464F00D10702 /* LaunchScreen.storyboard */,
 				0F43D73421FA464F00D10702 /* Info.plist */,
@@ -144,7 +150,9 @@
 				0F43D72B21FA464D00D10702 /* HomePageVC.swift in Sources */,
 				0F43D72921FA464D00D10702 /* AppDelegate.swift in Sources */,
 				0F43D73D21FA571D00D10702 /* StateInfoVC.swift in Sources */,
+				0F0AE15A2204DACA0004CA20 /* WebVC.swift in Sources */,
 				0F43D73B21FA49EF00D10702 /* StatesListTableVC.swift in Sources */,
+				0F0AE15822024F400004CA20 /* StateDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

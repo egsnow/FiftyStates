@@ -9,62 +9,31 @@
 import UIKit
 
 class StatesListTableVC: UITableViewController {
-
-    
-    
-    let stateAbbreviations = ["AL", "AK", "AR", "AZ", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY"]
-    
-    
     
     let cellIdentifier = "StateCell"
-    
     var stateSelected = ""
-
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-
     }
 
-
-    
-    // MARK: - Table view data source
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return stateAbbreviations.count
+        return stateDetails.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        cell.textLabel?.text = stateAbbreviations[indexPath.row]
-        
-        
+        cell.textLabel?.text = stateDetails[indexPath.row].abbreviation
         return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        stateSelected = stateAbbreviations[indexPath.row]
-        performSegue(withIdentifier: "ShowState", sender: nil)
-
+        stateSelected = stateDetails[indexPath.row].abbreviation
+        performSegue(withIdentifier: "ShowState", sender: indexPath.row)
     }
-    
-    
-
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ShowState" {
             let controller = segue.destination as! StateInfoVC
-            controller.nameOfState = stateSelected
-        }
-    
+            controller.nameOfState = sender as? Int
     }
-
-
-
-
 }
