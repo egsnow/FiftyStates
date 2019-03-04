@@ -8,7 +8,7 @@
 
 import Foundation
 
-let stateDetails = [
+var stateDetails = [
     (abbreviation: "AL", name: "Alabama", capital: "Montgomery", bird: "Yellowhammer", flower: "Camellia"),
     (abbreviation: "AK", name: "Alaska", capital: "Juneau", bird: "Willow Ptarmigan", flower: "Forget-me-not"),
     (abbreviation: "AR", name: "Arkansas", capital: "Little Rock", bird: "Mockingbird", flower: "Apple Blossom"),
