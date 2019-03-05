@@ -72,7 +72,6 @@
                                 <state key="normal" title="Load Flashcards"/>
                                 <connections>
                                     <action selector="loadFlashcards:" destination="8SB-OC-p8f" eventType="touchUpInside" id="GM8-de-WH1"/>
-                                    <segue destination="sVz-Dl-DgH" kind="show" identifier="ShowCard" id="Wdb-VT-Pd0"/>
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ERz-57-yul">
@@ -138,6 +137,7 @@
                         <outlet property="flagSwitch" destination="aIM-1c-v8k" id="yEM-qZ-y4v"/>
                         <outlet property="infoSwitch" destination="X9L-nL-B3x" id="cqk-10-FwP"/>
                         <outlet property="nameSwitch" destination="ERz-57-yul" id="Wrp-W8-AB0"/>
+                        <segue destination="sVz-Dl-DgH" kind="show" identifier="ShowCard" id="Zuw-Hv-cVW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cND-Jg-4sd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -317,6 +317,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Wdb-VT-Pd0"/>
+        <segue reference="Zuw-Hv-cVW"/>
     </inferredMetricsTieBreakers>
 </document>

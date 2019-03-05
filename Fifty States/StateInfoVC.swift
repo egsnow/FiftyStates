@@ -10,6 +10,7 @@ import UIKit
 
 class StateInfoVC: UIViewController {
     
+    
     @IBOutlet weak var stateNameLabel: UILabel!
     @IBOutlet weak var stateAbbreviationLabel: UILabel!
     @IBOutlet weak var stateFlagImage: UIImageView!
@@ -19,13 +20,20 @@ class StateInfoVC: UIViewController {
     @IBOutlet weak var stateFlowerImage: UIImageView!
     @IBOutlet weak var stateFlowerLabel: UILabel!
     
-    var nameOfState: Int?
+    var stateIndexNumber: Int?
     var birdImageName = ""
     var flowerImageName = ""
+    var flashcardSettings = [true, true, true]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let nameOfState = nameOfState {
+
+        print(flashcardSettings)
+        checkSegue()
+        adjustFlashcardSettings()        
+        
+        if let nameOfState = stateIndexNumber {
             birdImageName = stateDetails[nameOfState].abbreviation + "bird"
             flowerImageName = stateDetails[nameOfState].abbreviation + "flower"
             stateNameLabel.text = stateDetails[nameOfState].name
@@ -37,12 +45,50 @@ class StateInfoVC: UIViewController {
             stateFlowerImage.image = UIImage.init(named: flowerImageName)
             stateFlowerLabel.text = stateDetails[nameOfState].flower
         }
+
     }
+    
+    
+    func checkSegue(){
+        if stateIndexNumber == nil {
+            stateIndexNumber = Int.random(in: 0...49)
+        }
+    }
+    
+    
+    
+    
+    func adjustFlashcardSettings(){
+        if flashcardSettings[0] == true {
+            stateNameLabel.isHidden = false
+        } else {
+            stateNameLabel.isHidden = true
+        }
+        if flashcardSettings[1] == true {
+            stateFlagImage.isHidden = false
+        } else {
+            stateFlagImage.isHidden = true
+        }
+        if flashcardSettings[2] == true {
+            stateCapitalLabel.isHidden = false
+            stateAbbreviationLabel.isHidden = false
+            stateBirdLabel.isHidden = false
+            stateFlowerLabel.isHidden = false
+        } else {
+            stateCapitalLabel.isHidden = true
+            stateAbbreviationLabel.isHidden = true
+            stateBirdLabel.isHidden = true
+            stateFlowerLabel.isHidden = true
+        }
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let controller = segue.destination as! WebVC
-        if let thisState = nameOfState {
-            controller.thisState = stateDetails[nameOfState!].name
+        if let nameOfState = stateIndexNumber {
+            controller.stateName = stateDetails[nameOfState].name
         }
     }
 }
+
+

@@ -15,52 +15,26 @@ class SettingsVC: UIViewController {
     @IBOutlet weak var flagSwitch: UISwitch!
     @IBOutlet weak var infoSwitch: UISwitch!
     
-    var name = true
-    var flag = true
-    var info = true
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameSwitch.isOn = name
-        flagSwitch.isOn = flag
-        infoSwitch.isOn = info
-        
     }
-    
-
     
     
     @IBAction func loadFlashcards(_ sender: UIButton) {
-        if nameSwitch.isOn == true {
-            print("show name")
-        } else if nameSwitch.isOn == false {
-            print("don't show name")
-        }
-        if flagSwitch.isOn == true {
-            print("show flag")
-        } else if flagSwitch.isOn == false {
-            print("don't show flag")
-        }
-        if infoSwitch.isOn == true {
-            print("show info")
-        } else if infoSwitch.isOn == false {
-            print("don't show info")
-        }
-        performSegue(withIdentifier: "ShowCard", sender: Any)
+       let settings = [nameSwitch.isOn,
+                       flagSwitch.isOn,
+                       infoSwitch.isOn]
+        
+        performSegue(withIdentifier: "ShowCard", sender: settings)
     }
-    
-    
-    
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let controller = segue.destination as! StateInfoVC
-        controller.nameOfState = sender as? Int
+        let nextVC = segue.destination as! StateInfoVC
+        nextVC.flashcardSettings = sender as? [Bool] ?? [false, false, false]
     }
     
     
-
+    
 }

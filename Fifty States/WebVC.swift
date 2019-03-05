@@ -13,12 +13,12 @@ class WebVC: UIViewController {
     
     @IBOutlet weak var webView: WKWebView!
 
-    var thisState = ""
+    var stateName = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(webView)
-        var urlString = "https://en.wikipedia.org/wiki/" + thisState
+        var urlString = "https://en.wikipedia.org/wiki/" + stateName
         urlString = urlString.replacingOccurrences(of: " ", with: "_")
         if let url = URL(string: urlString) {
             webView.load(URLRequest(url: url))

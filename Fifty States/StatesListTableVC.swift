@@ -34,6 +34,6 @@ class StatesListTableVC: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             let controller = segue.destination as! StateInfoVC
-            controller.nameOfState = sender as? Int
+            controller.stateIndexNumber = sender as? Int
     }
 }
