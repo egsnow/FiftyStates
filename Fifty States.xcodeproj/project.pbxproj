@@ -17,7 +17,8 @@
 		0F43D73321FA464F00D10702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F43D73121FA464F00D10702 /* LaunchScreen.storyboard */; };
 		0F43D73B21FA49EF00D10702 /* StatesListTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43D73A21FA49EF00D10702 /* StatesListTableVC.swift */; };
 		0F43D73D21FA571D00D10702 /* StateInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43D73C21FA571D00D10702 /* StateInfoVC.swift */; };
-		0F6ED97B2244941F005A51E3 /* MemoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6ED97A2244941F005A51E3 /* MemoryVC.swift */; };
+		0F6ED97B2244941F005A51E3 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6ED97A2244941F005A51E3 /* QuizVC.swift */; };
+		0FD61A2D2245765000717B91 /* MemoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD61A2C2245765000717B91 /* MemoryVC.swift */; };
 		0FEE45C022384F0A00C19261 /* THE AMERICAN.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FEE45BF22384F0A00C19261 /* THE AMERICAN.ttf */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +35,8 @@
 		0F43D73421FA464F00D10702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F43D73A21FA49EF00D10702 /* StatesListTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesListTableVC.swift; sourceTree = "<group>"; };
 		0F43D73C21FA571D00D10702 /* StateInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateInfoVC.swift; sourceTree = "<group>"; };
-		0F6ED97A2244941F005A51E3 /* MemoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryVC.swift; sourceTree = "<group>"; };
+		0F6ED97A2244941F005A51E3 /* QuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
+		0FD61A2C2245765000717B91 /* MemoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryVC.swift; sourceTree = "<group>"; };
 		0FEE45BF22384F0A00C19261 /* THE AMERICAN.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "THE AMERICAN.ttf"; path = "../../THE AMERICAN.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,7 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				0F43D72C21FA464D00D10702 /* Main.storyboard */,
-				0F6ED97A2244941F005A51E3 /* MemoryVC.swift */,
+				0F6ED97A2244941F005A51E3 /* QuizVC.swift */,
+				0FD61A2C2245765000717B91 /* MemoryVC.swift */,
 				0F2720F9222AD90C00F45273 /* SettingsVC.swift */,
 				0F43D72A21FA464D00D10702 /* HomePageVC.swift */,
 				0F43D73A21FA49EF00D10702 /* StatesListTableVC.swift */,
@@ -160,7 +163,8 @@
 				0F43D72B21FA464D00D10702 /* HomePageVC.swift in Sources */,
 				0F43D72921FA464D00D10702 /* AppDelegate.swift in Sources */,
 				0F43D73D21FA571D00D10702 /* StateInfoVC.swift in Sources */,
-				0F6ED97B2244941F005A51E3 /* MemoryVC.swift in Sources */,
+				0F6ED97B2244941F005A51E3 /* QuizVC.swift in Sources */,
+				0FD61A2D2245765000717B91 /* MemoryVC.swift in Sources */,
 				0F0AE15A2204DACA0004CA20 /* WebVC.swift in Sources */,
 				0F2720FA222AD90C00F45273 /* SettingsVC.swift in Sources */,
 				0F43D73B21FA49EF00D10702 /* StatesListTableVC.swift in Sources */,
