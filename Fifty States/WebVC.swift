@@ -18,6 +18,12 @@ class WebVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(webView)
+        
+        
+        //FIXME: - FIX URLS FOR BROKEN STATES
+        //
+        
+        
         var urlString = "https://en.wikipedia.org/wiki/" + stateName
         urlString = urlString.replacingOccurrences(of: " ", with: "_")
         if let url = URL(string: urlString) {

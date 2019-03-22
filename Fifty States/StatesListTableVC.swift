@@ -35,5 +35,7 @@ class StatesListTableVC: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             let controller = segue.destination as! StateInfoVC
             controller.stateIndexNumber = sender as? Int
+            controller.usingFlashcards = false
+
     }
 }
