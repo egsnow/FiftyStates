@@ -16,11 +16,9 @@ class SettingsVC: UIViewController {
     @IBOutlet weak var infoSwitch: UISwitch!
     @IBOutlet weak var settingsSwitches: UISwitch!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
     
     @IBAction func loadFlashcards(_ sender: UIButton) {
        let settings = [nameSwitch.isOn,
@@ -29,24 +27,15 @@ class SettingsVC: UIViewController {
         performSegue(withIdentifier: "ShowCard", sender: settings)
     }
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let nextVC = segue.destination as! StateInfoVC
         nextVC.flashcardSettings = sender as? [Bool] ?? [false, false, false]
         nextVC.usingFlashcards = true
     }
     
-    
-    
-
-    
-    
-    
     @IBAction func switches(_ sender: UISwitch) {
         if !nameSwitch.isOn && !flagSwitch.isOn && !infoSwitch.isOn {
             nameSwitch.setOn(true, animated: true)
         }
     }
-    
-    
 }

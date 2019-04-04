@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mvc-71-nII">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mvc-71-nII">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,15 +23,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="usa frame" translatesAutoresizingMaskIntoConstraints="NO" id="Nsj-mx-s34">
-                                <rect key="frame" x="52" y="107" width="310" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szv-Gk-cdW">
-                                <rect key="frame" x="52" y="471" width="310" height="70"/>
+                                <rect key="frame" x="52" y="436" width="310" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="THEAMERICAN" family="THE AMERICAN" pointSize="50"/>
-                                <state key="normal" title="INFORMATION" backgroundImage="usa frame">
+                                <fontDescription key="fontDescription" name="THEAMERICAN" family="THE AMERICAN" pointSize="42"/>
+                                <state key="normal" title="INFORMATION">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -39,10 +35,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQe-iy-pnH">
-                                <rect key="frame" x="52" y="558" width="310" height="70"/>
+                                <rect key="frame" x="52" y="526" width="310" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="THEAMERICAN" family="THE AMERICAN" pointSize="50"/>
-                                <state key="normal" title="FLASH CARDS" backgroundImage="usa frame">
+                                <fontDescription key="fontDescription" name="THEAMERICAN" family="THE AMERICAN" pointSize="42"/>
+                                <state key="normal" title="FLASH CARDS">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -50,21 +46,21 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="usa" translatesAutoresizingMaskIntoConstraints="NO" id="0Yc-Qk-QwC">
-                                <rect key="frame" x="52" y="273" width="310" height="180"/>
+                                <rect key="frame" x="52" y="107" width="310" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50 STATES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYd-F9-T5v">
-                                <rect key="frame" x="52" y="107" width="310" height="150"/>
+                                <rect key="frame" x="52" y="286" width="310" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="THEAMERICAN" family="THE AMERICAN" pointSize="56"/>
+                                <fontDescription key="fontDescription" name="THEAMERICAN" family="THE AMERICAN" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxd-NZ-BBf">
-                                <rect key="frame" x="52" y="646" width="310" height="70"/>
+                                <rect key="frame" x="52" y="615" width="310" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="THEAMERICAN" family="THE AMERICAN" pointSize="50"/>
-                                <state key="normal" title="QUIZ" backgroundImage="usa frame">
+                                <fontDescription key="fontDescription" name="THEAMERICAN" family="THE AMERICAN" pointSize="42"/>
+                                <state key="normal" title="QUIZ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -72,10 +68,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqx-hu-ahn">
-                                <rect key="frame" x="52" y="735" width="310" height="70"/>
+                                <rect key="frame" x="52" y="704" width="310" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="THEAMERICAN" family="THE AMERICAN" pointSize="50"/>
-                                <state key="normal" title="MEMORY" backgroundImage="usa frame">
+                                <fontDescription key="fontDescription" name="THEAMERICAN" family="THE AMERICAN" pointSize="42"/>
+                                <state key="normal" title="MEMORY">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -457,47 +453,93 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rR3-9i-bc4">
-                                <rect key="frame" x="20" y="145" width="175" height="115"/>
+                                <rect key="frame" x="20" y="118" width="175" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="american_flag"/>
                                 <connections>
+                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="T1j-2N-O38"/>
                                     <action selector="showFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="pkz-Rz-bV2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvO-p0-wQz">
-                                <rect key="frame" x="219" y="145" width="175" height="115"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvO-p0-wQz">
+                                <rect key="frame" x="219" y="118" width="175" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="american_flag"/>
+                                <connections>
+                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="zgz-62-ebC"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRn-l3-mTs">
-                                <rect key="frame" x="20" y="280" width="175" height="115"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRn-l3-mTs">
+                                <rect key="frame" x="20" y="253" width="175" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="american_flag"/>
+                                <connections>
+                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="46Q-Sl-6I7"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4j-2F-myq">
-                                <rect key="frame" x="219" y="280" width="175" height="115"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4j-2F-myq">
+                                <rect key="frame" x="219" y="253" width="175" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="american_flag"/>
+                                <connections>
+                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="d4V-KJ-WGd"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCS-Bv-PCA">
-                                <rect key="frame" x="20" y="415" width="175" height="115"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCS-Bv-PCA">
+                                <rect key="frame" x="20" y="388" width="175" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="american_flag"/>
+                                <connections>
+                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="FQF-Y7-9Ps"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T29-Q9-ctz">
-                                <rect key="frame" x="219" y="415" width="175" height="115"/>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T29-Q9-ctz">
+                                <rect key="frame" x="219" y="388" width="175" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="american_flag"/>
+                                <connections>
+                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="ZSS-fp-dx1"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmX-14-mp8">
-                                <rect key="frame" x="20" y="550" width="175" height="115"/>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmX-14-mp8">
+                                <rect key="frame" x="20" y="523" width="175" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="american_flag"/>
+                                <connections>
+                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="IgL-kt-yOe"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5M-N4-lxV">
-                                <rect key="frame" x="219" y="550" width="175" height="115"/>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5M-N4-lxV">
+                                <rect key="frame" x="219" y="523" width="175" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="american_flag"/>
+                                <connections>
+                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="Hss-3W-baU"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arX-HU-T1q">
-                                <rect key="frame" x="20" y="689" width="175" height="115"/>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arX-HU-T1q">
+                                <rect key="frame" x="20" y="662" width="175" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="american_flag"/>
+                                <connections>
+                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="3bz-qg-760"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlW-9K-5hQ">
-                                <rect key="frame" x="219" y="689" width="175" height="115"/>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlW-9K-5hQ">
+                                <rect key="frame" x="219" y="662" width="175" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="american_flag"/>
+                                <connections>
+                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="7YD-ET-Xpe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb4-9H-anV">
+                                <rect key="frame" x="170" y="799" width="75" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SHUFFLE"/>
+                                <connections>
+                                    <action selector="newStates:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="6iW-LN-yx9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -519,12 +561,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sJ6-Z6-fIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858" y="921"/>
+            <point key="canvasLocation" x="1857.9710144927537" y="920.75892857142856"/>
         </scene>
     </scenes>
     <resources>
+        <image name="american_flag" width="1783" height="936"/>
         <image name="usa" width="2006" height="1258"/>
-        <image name="usa frame" width="600" height="371"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Zuw-Hv-cVW"/>

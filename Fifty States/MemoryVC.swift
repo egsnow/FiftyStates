@@ -10,66 +10,48 @@ import UIKit
 
 class MemoryVC: UIViewController {
     
-    
     @IBOutlet var flags: [UIButton]!
     
-    
     var currentStates = [Int]()
-    var stateIndexNumber: Int?
-
     
-    
-    
-    func shuffleStates() {
-        stateIndexNumber = Int.random(in: 0...49)
-        currentStates.append(stateIndexNumber!)
-        let flagImage0 = UIImage.init(named: stateDetails[stateIndexNumber!].name)
-        print(stateDetails[stateIndexNumber!].name)
-        flags[0].setBackgroundImage(flagImage0, for: .normal)
-        
-        stateIndexNumber = Int.random(in: 0...49)
-        currentStates.append(stateIndexNumber!)
-        let flagImage1 = UIImage.init(named: stateDetails[stateIndexNumber!].name)
-        print(stateDetails[stateIndexNumber!].name)
-        flags[1].setBackgroundImage(flagImage1, for: .normal)
-        
-        stateIndexNumber = Int.random(in: 0...49)
-        currentStates.append(stateIndexNumber!)
-        let flagImage2 = UIImage.init(named: stateDetails[stateIndexNumber!].name)
-        print(stateDetails[stateIndexNumber!].name)
-        flags[2].setBackgroundImage(flagImage2, for: .normal)
-        
-        stateIndexNumber = Int.random(in: 0...49)
-        currentStates.append(stateIndexNumber!)
-        let flagImage3 = UIImage.init(named: stateDetails[stateIndexNumber!].name)
-        print(stateDetails[stateIndexNumber!].name)
-        flags[3].setBackgroundImage(flagImage3, for: .normal)
-        
-        stateIndexNumber = Int.random(in: 0...49)
-        currentStates.append(stateIndexNumber!)
-        let flagImage4 = UIImage.init(named: stateDetails[stateIndexNumber!].name)
-        print(stateDetails[stateIndexNumber!].name)
-        flags[4].setBackgroundImage(flagImage4, for: .normal)
-
-        
-    }
-    
-    
-    
-    
-    @IBAction func showFlag(_ sender: UIButton) {
-        
-        
-    }
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         shuffleStates()
     }
     
+    
+    func shuffleStates() {
+        for _ in 0...4 {
+            let stateIndexNumber = Int.random(in: 0...49)
+            currentStates.append(stateIndexNumber)
+        }
+        for (arrayIndex, currentState) in currentStates.enumerated() {
+            let flagName = stateDetails[currentState].name
+            let flagImage = UIImage.init(named: flagName)
+            flags[arrayIndex].setBackgroundImage(flagImage, for: .normal)
+        }
+        print(currentStates)
+    } 
+    
+    
+    @IBAction func flipFlag(_ sender: UIButton) {
+        let selectedStateID = currentStates[sender.tag]
+        let selectedStateName = selectedStateID
+        let selectedFlagImage = UIImage.init(named: "selectedStateName")
+        sender.setBackgroundImage(selectedFlagImage, for: .normal)
+        
+    }
+    
+    
+    @IBAction func showFlag(_ sender: UIButton) {
+        
+    }
+    
 
-
+    @IBAction func newStates(_ sender: UIButton) {
+        shuffleStates()
+    }
+    
+    
     
 }
