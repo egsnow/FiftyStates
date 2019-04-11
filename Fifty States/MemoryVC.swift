@@ -8,50 +8,43 @@
 
 import UIKit
 
-class MemoryVC: UIViewController {
+class MemoryVC: UIViewController, MemoryGameDelegate {
     
     @IBOutlet var flags: [UIButton]!
     
-    var currentStates = [Int]()
+    var game: MemoryGame?
+    var currentStatesArray: [MemoryGameDelegate.currentStates]
+    let defaultImage = UIImage.init(named: "american_flag")
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        game = MemoryGame(numberOfCards: flags.count)
         shuffleStates()
     }
     
-    
     func shuffleStates() {
-        for _ in 0...4 {
+        for i in 0...9 {
+            flags[i].setBackgroundImage(defaultImage, for: .normal)
+        }
+        for _ in 0...9 {
             let stateIndexNumber = Int.random(in: 0...49)
-            currentStates.append(stateIndexNumber)
+            currentStatesArray.append(stateIndexNumber)
         }
-        for (arrayIndex, currentState) in currentStates.enumerated() {
-            let flagName = stateDetails[currentState].name
-            let flagImage = UIImage.init(named: flagName)
-            flags[arrayIndex].setBackgroundImage(flagImage, for: .normal)
-        }
-        print(currentStates)
-    } 
-    
-    
-    @IBAction func flipFlag(_ sender: UIButton) {
-        let selectedStateID = currentStates[sender.tag]
-        let selectedStateName = selectedStateID
-        let selectedFlagImage = UIImage.init(named: "selectedStateName")
-        sender.setBackgroundImage(selectedFlagImage, for: .normal)
-        
     }
     
+    @IBAction func flipFlag(_ sender: UIButton) {
+        let selectedStateID = currentStatesArray[sender.tag]
+        let selectedStateName = stateDetails[selectedStateID].name
+        print(selectedStateName)
+        let selectedFlagImage = UIImage.init(named: selectedStateName)
+        sender.setBackgroundImage(selectedFlagImage, for: .normal)
+    }
     
     @IBAction func showFlag(_ sender: UIButton) {
         
     }
     
-
     @IBAction func newStates(_ sender: UIButton) {
         shuffleStates()
     }
-    
-    
-    
 }
