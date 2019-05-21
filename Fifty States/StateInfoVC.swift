@@ -31,6 +31,8 @@ class StateInfoVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "State Info"
+
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapAction)))
         adjustFlashcardSettings()
         shuffleState()
@@ -68,14 +70,14 @@ class StateInfoVC: UIViewController {
         if let nameOfState = stateIndexNumber {
             birdImageName = stateDetails[nameOfState].abbreviation + "bird"
             flowerImageName = stateDetails[nameOfState].abbreviation + "flower"
-            stateNameLabel.text = stateDetails[nameOfState].name
-            stateAbbreviationLabel.text = stateDetails[nameOfState].abbreviation
+            stateNameLabel.text = "State Name:\n" + stateDetails[nameOfState].name
+            stateAbbreviationLabel.text = "State Abbreviation:\n" + stateDetails[nameOfState].abbreviation
             stateFlagImage.image = UIImage.init(named: stateDetails[nameOfState].name)
-            stateCapitalLabel.text = stateDetails[nameOfState].capital
-            stateBirdLabel.text = stateDetails[nameOfState].bird
+            stateCapitalLabel.text = "State Capital:\n" + stateDetails[nameOfState].capital
+            stateBirdLabel.text = "State Bird:\n" + stateDetails[nameOfState].bird
             stateBirdImage.image = UIImage.init(named: birdImageName)
             stateFlowerImage.image = UIImage.init(named: flowerImageName)
-            stateFlowerLabel.text = stateDetails[nameOfState].flower
+            stateFlowerLabel.text = "State Flower:\n" + stateDetails[nameOfState].flower
         }
     }
     

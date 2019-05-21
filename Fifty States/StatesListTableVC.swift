@@ -15,6 +15,7 @@ class StatesListTableVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Select A State"
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -23,12 +24,14 @@ class StatesListTableVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        cell.textLabel?.text = stateDetails[indexPath.row].abbreviation
+        cell.textLabel?.textColor = .white
+        cell.textLabel?.font = UIFont(name: "chalkduster", size: 14) 
+        cell.textLabel?.text = stateDetails[indexPath.row].name
         return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        stateSelected = stateDetails[indexPath.row].abbreviation
+        stateSelected = stateDetails[indexPath.row].name
         performSegue(withIdentifier: "ShowState", sender: indexPath.row)
     }
     

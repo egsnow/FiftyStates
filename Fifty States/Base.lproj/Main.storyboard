@@ -9,13 +9,8 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="THE AMERICAN.ttf">
-            <string>THEAMERICAN</string>
-        </array>
-    </customFonts>
     <scenes>
-        <!--'MURICA-->
+        <!--50 STATES-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomePageVC" customModule="Fifty_States" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,21 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szv-Gk-cdW">
-                                <rect key="frame" x="52" y="436" width="310" height="90"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szv-Gk-cdW" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="52" y="507" width="310" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="THEAMERICAN" family="THE AMERICAN" pointSize="42"/>
-                                <state key="normal" title="INFORMATION">
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
+                                <state key="normal" title="STATES">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="KhF-R5-NQE" kind="show" id="o5y-d3-5Ey"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQe-iy-pnH">
-                                <rect key="frame" x="52" y="526" width="310" height="90"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQe-iy-pnH" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="52" y="611" width="310" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="THEAMERICAN" family="THE AMERICAN" pointSize="42"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
                                 <state key="normal" title="FLASH CARDS">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -46,32 +41,24 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="usa" translatesAutoresizingMaskIntoConstraints="NO" id="0Yc-Qk-QwC">
-                                <rect key="frame" x="52" y="107" width="310" height="180"/>
+                                <rect key="frame" x="52" y="277" width="310" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.59105408191680908" green="0.1692868173122406" blue="0.16256529092788696" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50 STATES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYd-F9-T5v">
-                                <rect key="frame" x="52" y="286" width="310" height="150"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FIFTY STATES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wYd-F9-T5v">
+                                <rect key="frame" x="52" y="108" width="310" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="THEAMERICAN" family="THE AMERICAN" pointSize="60"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="37"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
+                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="4" height="4"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxd-NZ-BBf">
-                                <rect key="frame" x="52" y="615" width="310" height="90"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqx-hu-ahn" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="52" y="715" width="310" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="THEAMERICAN" family="THE AMERICAN" pointSize="42"/>
-                                <state key="normal" title="QUIZ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Lq8-I8-JHP" kind="show" identifier="QuizGame" id="ILN-tx-NG8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqx-hu-ahn">
-                                <rect key="frame" x="52" y="704" width="310" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="THEAMERICAN" family="THE AMERICAN" pointSize="42"/>
-                                <state key="normal" title="MEMORY">
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
+                                <state key="normal" title="MEMORY GAME">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -79,10 +66,10 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="'MURICA" id="f79-7j-nWu"/>
+                    <navigationItem key="navigationItem" title="50 STATES" id="f79-7j-nWu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,11 +83,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnm-oF-Ye7">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnm-oF-Ye7" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
                                 <rect key="frame" x="120" y="500" width="175" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
-                                <state key="normal" title="Load Flashcards"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <state key="normal" title="Load Flashcards">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="loadFlashcards:" destination="8SB-OC-p8f" eventType="touchUpInside" id="GM8-de-WH1"/>
                                 </connections>
@@ -127,49 +116,49 @@
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIc-ct-ARW">
-                                <rect key="frame" x="20" y="188" width="55" height="24"/>
+                                <rect key="frame" x="20" y="188" width="52" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On will be shown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqv-k4-0jv">
-                                <rect key="frame" x="233" y="188" width="147" height="24"/>
+                                <rect key="frame" x="233" y="188" width="167" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8e-7i-00h">
-                                <rect key="frame" x="20" y="268" width="41" height="24"/>
+                                <rect key="frame" x="20" y="268" width="43" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On will be shown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77k-kE-UKh">
-                                <rect key="frame" x="233" y="268" width="147" height="24"/>
+                                <rect key="frame" x="233" y="268" width="167" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjd-DT-s9F">
-                                <rect key="frame" x="20" y="353" width="37" height="24"/>
+                                <rect key="frame" x="20" y="353" width="44" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On will be shown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RF-PX-pmg">
-                                <rect key="frame" x="233" y="353" width="147" height="24"/>
+                                <rect key="frame" x="233" y="353" width="167" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="4R4-rU-ka7"/>
                     </view>
                     <navigationItem key="navigationItem" title="SETTINGS" id="TOS-PO-oiy"/>
@@ -183,95 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cND-Jg-4sd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858" y="134"/>
-        </scene>
-        <!--QUIZ-->
-        <scene sceneID="2gk-Ss-gvp">
-            <objects>
-                <viewController id="Lq8-I8-JHP" customClass="QuizVC" customModule="Fifty_States" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yVU-sW-MrY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Capital" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAY-Ww-pW4">
-                                <rect key="frame" x="57" y="188" width="300" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Capital:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jki-0I-snZ">
-                                <rect key="frame" x="107" y="124" width="200" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flower" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKn-vg-K8j">
-                                <rect key="frame" x="57" y="316" width="300" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Flower:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtG-8W-XnK">
-                                <rect key="frame" x="107" y="252" width="200" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bird" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITT-j3-2dP">
-                                <rect key="frame" x="57" y="444" width="300" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Bird:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bif-D1-hci">
-                                <rect key="frame" x="107" y="380" width="200" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIJ-JK-yVe">
-                                <rect key="frame" x="20" y="531" width="175" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fh3-Pw-6dZ">
-                                <rect key="frame" x="219" y="531" width="175" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMD-bn-v6b">
-                                <rect key="frame" x="20" y="676" width="175" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiV-IM-f7n">
-                                <rect key="frame" x="219" y="676" width="175" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="selectAnswerButtons:" destination="Lq8-I8-JHP" eventType="touchUpInside" id="Aem-Pk-0FB"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="C3w-UI-H8b"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="QUIZ" id="AyY-P5-OTM"/>
-                    <connections>
-                        <outlet property="birdLabel" destination="ITT-j3-2dP" id="Iv3-PV-JqT"/>
-                        <outlet property="capitalLabel" destination="MAY-Ww-pW4" id="UAw-xE-4TU"/>
-                        <outlet property="flowerLabel" destination="UKn-vg-K8j" id="XZN-az-TfF"/>
-                        <outletCollection property="answerButtons" destination="NIJ-JK-yVe" collectionClass="NSMutableArray" id="iYe-pb-D9L"/>
-                        <outletCollection property="answerButtons" destination="fh3-Pw-6dZ" collectionClass="NSMutableArray" id="Fg5-EL-eZh"/>
-                        <outletCollection property="answerButtons" destination="EMD-bn-v6b" collectionClass="NSMutableArray" id="3b5-pC-Dci"/>
-                        <outletCollection property="answerButtons" destination="RiV-IM-f7n" collectionClass="NSMutableArray" id="zTo-Up-gLc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u4P-4F-Zr2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1048" y="922"/>
+            <point key="canvasLocation" x="1841" y="478"/>
         </scene>
         <!--STATES-->
         <scene sceneID="Mq4-0q-GKM">
@@ -280,17 +181,19 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ETX-0K-hgQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="sectionIndexBackgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StateCell" id="ysa-NQ-qP2">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="StateCell" id="ysa-NQ-qP2">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ysa-NQ-qP2" id="YES-Em-fjl">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -305,7 +208,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MRv-Rg-zkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858" y="-555"/>
+            <point key="canvasLocation" x="1841" y="-179"/>
         </scene>
         <!--STATE-->
         <scene sceneID="VdY-IW-zU6">
@@ -315,57 +218,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxb-eQ-9bY">
-                                <rect key="frame" x="55" y="103" width="316" height="60"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O3q-sa-05A" customClass="Pictures" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="55" y="159" width="316" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Abbreviation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56D-pK-Ko9">
-                                <rect key="frame" x="55" y="163" width="316" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Bird" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdU-mg-r3Z">
-                                <rect key="frame" x="55" y="475" width="316" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Capital" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzE-7o-4V3">
-                                <rect key="frame" x="55" y="415" width="316" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Flower" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0C-vL-Kuo">
-                                <rect key="frame" x="55" y="692" width="316" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O3q-sa-05A">
-                                <rect key="frame" x="55" y="223" width="316" height="193"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gIO-Sv-acF">
-                                <rect key="frame" x="55" y="535" width="158" height="158"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxb-eQ-9bY">
+                                <rect key="frame" x="55" y="508" width="316" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Abbreviation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56D-pK-Ko9">
+                                <rect key="frame" x="55" y="567" width="316" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Bird" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdU-mg-r3Z">
+                                <rect key="frame" x="55" y="685" width="316" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Capital" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzE-7o-4V3">
+                                <rect key="frame" x="55" y="626" width="316" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Flower" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0C-vL-Kuo">
+                                <rect key="frame" x="55" y="744" width="316" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gIO-Sv-acF" customClass="Pictures" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="55" y="351" width="158" height="158"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ncP-fv-0RE">
-                                <rect key="frame" x="213" y="535" width="158" height="158"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ncP-fv-0RE" customClass="Pictures" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="213" y="351" width="158" height="158"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="xWP-06-x14"/>
                     </view>
                     <navigationItem key="navigationItem" title="STATE" id="tFh-6M-0U4">
@@ -400,7 +304,7 @@
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9g6-Vh-JgK">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -433,7 +337,16 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="75P-N0-RJ6">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.014949268661439419" green="0.013143224641680717" blue="0.24708825349807739" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -452,123 +365,275 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rR3-9i-bc4">
-                                <rect key="frame" x="20" y="118" width="175" height="115"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rR3-9i-bc4" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="20" y="118" width="120" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="american_flag"/>
                                 <connections>
-                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="T1j-2N-O38"/>
-                                    <action selector="showFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="pkz-Rz-bV2"/>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="T1j-2N-O38"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvO-p0-wQz">
-                                <rect key="frame" x="219" y="118" width="175" height="115"/>
+                            <button opaque="NO" tag="1" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvO-p0-wQz" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="147" y="118" width="120" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="american_flag"/>
                                 <connections>
-                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="zgz-62-ebC"/>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="zgz-62-ebC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRn-l3-mTs">
-                                <rect key="frame" x="20" y="253" width="175" height="115"/>
+                            <button opaque="NO" tag="2" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GN9-uy-1gH" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="274" y="118" width="120" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="american_flag"/>
                                 <connections>
-                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="46Q-Sl-6I7"/>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="nKc-ju-kaG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4j-2F-myq">
-                                <rect key="frame" x="219" y="253" width="175" height="115"/>
+                            <button opaque="NO" tag="5" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vh-rl-g5f" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="274" y="188" width="120" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="american_flag"/>
                                 <connections>
-                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="d4V-KJ-WGd"/>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="1nf-b2-K83"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCS-Bv-PCA">
-                                <rect key="frame" x="20" y="388" width="175" height="115"/>
+                            <button opaque="NO" tag="3" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRn-l3-mTs" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="20" y="188" width="120" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="american_flag"/>
                                 <connections>
-                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="FQF-Y7-9Ps"/>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="46Q-Sl-6I7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T29-Q9-ctz">
-                                <rect key="frame" x="219" y="388" width="175" height="115"/>
+                            <button opaque="NO" tag="4" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4j-2F-myq" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="147" y="188" width="120" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="american_flag"/>
                                 <connections>
-                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="ZSS-fp-dx1"/>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="d4V-KJ-WGd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmX-14-mp8">
-                                <rect key="frame" x="20" y="523" width="175" height="115"/>
+                            <button opaque="NO" tag="6" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCS-Bv-PCA" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="20" y="258" width="120" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="american_flag"/>
                                 <connections>
-                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="IgL-kt-yOe"/>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="FQF-Y7-9Ps"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5M-N4-lxV">
-                                <rect key="frame" x="219" y="523" width="175" height="115"/>
+                            <button opaque="NO" tag="7" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T29-Q9-ctz" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="147" y="258" width="120" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="american_flag"/>
                                 <connections>
-                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="Hss-3W-baU"/>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="ZSS-fp-dx1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arX-HU-T1q">
-                                <rect key="frame" x="20" y="662" width="175" height="115"/>
+                            <button opaque="NO" tag="9" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmX-14-mp8" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="20" y="328" width="120" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="american_flag"/>
                                 <connections>
-                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="3bz-qg-760"/>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="IgL-kt-yOe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlW-9K-5hQ">
-                                <rect key="frame" x="219" y="662" width="175" height="115"/>
+                            <button opaque="NO" tag="10" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5M-N4-lxV" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="147" y="328" width="120" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="american_flag"/>
                                 <connections>
-                                    <action selector="flipFlag:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="7YD-ET-Xpe"/>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="Hss-3W-baU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb4-9H-anV">
-                                <rect key="frame" x="170" y="799" width="75" height="50"/>
+                            <button opaque="NO" tag="12" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arX-HU-T1q" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="20" y="398" width="120" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="SHUFFLE"/>
                                 <connections>
-                                    <action selector="newStates:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="6iW-LN-yx9"/>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="3bz-qg-760"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlW-9K-5hQ" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="147" y="398" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="7YD-ET-Xpe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YT-Pv-DB9" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="274" y="258" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="Wfk-Jg-D8q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uK7-BC-MAi" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="274" y="328" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="CXf-18-gfp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBG-Y0-pqA" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="274" y="398" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="Xyo-hG-drp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="15" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGD-Et-a7h" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="20" y="468" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="hds-Td-OT9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="16" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSh-e6-GJx" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="147" y="468" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="PAy-vQ-XjT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEQ-A8-8KH" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="274" y="468" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="5jY-Bf-jLC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="18" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ev-xI-xUr" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="20" y="538" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="Rm6-nD-ldw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwn-F1-D77" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="147" y="538" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="6xC-7F-19Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pX-4R-JAS" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="274" y="538" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="pYH-e2-Jpf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="21" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psw-0D-HvC" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="20" y="608" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="UOa-nj-cZU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Na-PF-yXS" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="147" y="608" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="6uq-22-1L3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xe1-CV-XNT" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="274" y="608" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="SRh-vm-vME"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="24" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIQ-LO-sbE" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="20" y="678" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="i55-6S-6tl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTy-Fp-jhT" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="147" y="678" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="u9D-XA-F5y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HX-ZI-pcb" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="274" y="678" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="A2q-S6-H4U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="27" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8VM-LC-RdD" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="20" y="748" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="MUh-bk-EAL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tue-vL-Up2" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="147" y="748" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="oK2-fK-Oo7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7X-Xq-kJE" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="274" y="748" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="dEY-5e-9lB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb4-9H-anV" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                <rect key="frame" x="106" y="818" width="201" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
+                                <state key="normal" title="DEAL NEW CARDS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dealNewCards:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="6iW-LN-yx9"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="dcP-iz-Tvv"/>
                     </view>
                     <navigationItem key="navigationItem" title="MEMORY" id="lhz-tm-1Xt"/>
                     <connections>
-                        <outletCollection property="flags" destination="rR3-9i-bc4" collectionClass="NSMutableArray" id="ez6-zd-0xh"/>
-                        <outletCollection property="flags" destination="PvO-p0-wQz" collectionClass="NSMutableArray" id="7au-iu-32L"/>
-                        <outletCollection property="flags" destination="rRn-l3-mTs" collectionClass="NSMutableArray" id="9rS-z9-4Yx"/>
-                        <outletCollection property="flags" destination="r4j-2F-myq" collectionClass="NSMutableArray" id="NWr-MB-JLd"/>
-                        <outletCollection property="flags" destination="xCS-Bv-PCA" collectionClass="NSMutableArray" id="8qX-Y8-3v8"/>
-                        <outletCollection property="flags" destination="T29-Q9-ctz" collectionClass="NSMutableArray" id="iJu-TG-wWi"/>
-                        <outletCollection property="flags" destination="cmX-14-mp8" collectionClass="NSMutableArray" id="ZzO-Rt-SLS"/>
-                        <outletCollection property="flags" destination="K5M-N4-lxV" collectionClass="NSMutableArray" id="580-Po-zYH"/>
-                        <outletCollection property="flags" destination="arX-HU-T1q" collectionClass="NSMutableArray" id="3yk-oz-WSC"/>
-                        <outletCollection property="flags" destination="WlW-9K-5hQ" collectionClass="NSMutableArray" id="0vy-8j-fDP"/>
+                        <outlet property="dealCardsButton" destination="gb4-9H-anV" id="vtf-8L-9UB"/>
+                        <outletCollection property="cardButtons" destination="rR3-9i-bc4" collectionClass="NSMutableArray" id="anS-eI-SFc"/>
+                        <outletCollection property="cardButtons" destination="rRn-l3-mTs" collectionClass="NSMutableArray" id="nWN-1t-cSd"/>
+                        <outletCollection property="cardButtons" destination="xCS-Bv-PCA" collectionClass="NSMutableArray" id="cBc-Lm-01D"/>
+                        <outletCollection property="cardButtons" destination="cmX-14-mp8" collectionClass="NSMutableArray" id="hF0-cb-YAb"/>
+                        <outletCollection property="cardButtons" destination="arX-HU-T1q" collectionClass="NSMutableArray" id="Ap0-Ts-MCQ"/>
+                        <outletCollection property="cardButtons" destination="pGD-Et-a7h" collectionClass="NSMutableArray" id="BeG-KI-IVC"/>
+                        <outletCollection property="cardButtons" destination="3Ev-xI-xUr" collectionClass="NSMutableArray" id="XHJ-ye-WMj"/>
+                        <outletCollection property="cardButtons" destination="psw-0D-HvC" collectionClass="NSMutableArray" id="ntq-dh-pxw"/>
+                        <outletCollection property="cardButtons" destination="BIQ-LO-sbE" collectionClass="NSMutableArray" id="grx-dX-0b1"/>
+                        <outletCollection property="cardButtons" destination="8VM-LC-RdD" collectionClass="NSMutableArray" id="Li1-Wc-uy5"/>
+                        <outletCollection property="cardButtons" destination="PvO-p0-wQz" collectionClass="NSMutableArray" id="KgV-hD-KZV"/>
+                        <outletCollection property="cardButtons" destination="r4j-2F-myq" collectionClass="NSMutableArray" id="kNe-cK-FK7"/>
+                        <outletCollection property="cardButtons" destination="T29-Q9-ctz" collectionClass="NSMutableArray" id="t5O-f4-toM"/>
+                        <outletCollection property="cardButtons" destination="K5M-N4-lxV" collectionClass="NSMutableArray" id="xmO-J5-Jw2"/>
+                        <outletCollection property="cardButtons" destination="WlW-9K-5hQ" collectionClass="NSMutableArray" id="KBP-Dm-Nwd"/>
+                        <outletCollection property="cardButtons" destination="xSh-e6-GJx" collectionClass="NSMutableArray" id="hfk-u0-2FH"/>
+                        <outletCollection property="cardButtons" destination="Fwn-F1-D77" collectionClass="NSMutableArray" id="QNl-PK-mLC"/>
+                        <outletCollection property="cardButtons" destination="5Na-PF-yXS" collectionClass="NSMutableArray" id="6Mo-xc-J6J"/>
+                        <outletCollection property="cardButtons" destination="eTy-Fp-jhT" collectionClass="NSMutableArray" id="rAw-Od-b5g"/>
+                        <outletCollection property="cardButtons" destination="Tue-vL-Up2" collectionClass="NSMutableArray" id="COk-SP-y1D"/>
+                        <outletCollection property="cardButtons" destination="GN9-uy-1gH" collectionClass="NSMutableArray" id="vgU-OS-RLn"/>
+                        <outletCollection property="cardButtons" destination="1Vh-rl-g5f" collectionClass="NSMutableArray" id="n2y-b0-cFE"/>
+                        <outletCollection property="cardButtons" destination="9YT-Pv-DB9" collectionClass="NSMutableArray" id="ZgK-yZ-qPj"/>
+                        <outletCollection property="cardButtons" destination="uK7-BC-MAi" collectionClass="NSMutableArray" id="CAh-V3-c4d"/>
+                        <outletCollection property="cardButtons" destination="GBG-Y0-pqA" collectionClass="NSMutableArray" id="Wdv-HU-e7S"/>
+                        <outletCollection property="cardButtons" destination="pEQ-A8-8KH" collectionClass="NSMutableArray" id="AOP-yy-U7s"/>
+                        <outletCollection property="cardButtons" destination="7pX-4R-JAS" collectionClass="NSMutableArray" id="JmI-kE-1pc"/>
+                        <outletCollection property="cardButtons" destination="Xe1-CV-XNT" collectionClass="NSMutableArray" id="w7S-VC-2hl"/>
+                        <outletCollection property="cardButtons" destination="6HX-ZI-pcb" collectionClass="NSMutableArray" id="q5l-cC-gjZ"/>
+                        <outletCollection property="cardButtons" destination="e7X-Xq-kJE" collectionClass="NSMutableArray" id="Twb-1K-MJz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sJ6-Z6-fIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1857.9710144927537" y="920.75892857142856"/>
+            <point key="canvasLocation" x="1048" y="820"/>
         </scene>
     </scenes>
     <resources>
-        <image name="american_flag" width="1783" height="936"/>
         <image name="usa" width="2006" height="1258"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Zuw-Hv-cVW"/>
+        <segue reference="Tzc-CY-Nwy"/>
     </inferredMetricsTieBreakers>
 </document>

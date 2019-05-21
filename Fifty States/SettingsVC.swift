@@ -18,6 +18,8 @@ class SettingsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Flash Card Settings"
+
     }
     
     @IBAction func loadFlashcards(_ sender: UIButton) {

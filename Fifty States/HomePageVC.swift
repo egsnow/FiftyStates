@@ -10,8 +10,14 @@ import UIKit
 
 class HomePageVC: UIViewController {
 
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "50 States"
+
+
     }
 
     override func viewWillAppear(_ animated: Bool) {

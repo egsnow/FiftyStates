@@ -8,43 +8,98 @@
 
 import UIKit
 
-class MemoryVC: UIViewController, MemoryGameDelegate {
+class MemoryVC: UIViewController {
     
-    @IBOutlet var flags: [UIButton]!
     
-    var game: MemoryGame?
-    var currentStatesArray: [MemoryGameDelegate.currentStates]
-    let defaultImage = UIImage.init(named: "american_flag")
+    @IBOutlet var cardButtons: [UIButton]!
+    @IBOutlet var dealCardsButton: UIButton!
+    
+    
+    var game: MemoryGame!
+    let defaultImage = UIImage.init(named: "flagbacks1")
+    var selectedCardsIndexes = [Int]()
+    var gamePausedForDelay = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        game = MemoryGame(numberOfCards: flags.count)
-        shuffleStates()
+        title = "Memory Game"
+        setButtonTags()
+        game = MemoryGame(numberOfCards: cardButtons.count)
+        showBacks()
     }
     
-    func shuffleStates() {
-        for i in 0...9 {
-            flags[i].setBackgroundImage(defaultImage, for: .normal)
-        }
-        for _ in 0...9 {
-            let stateIndexNumber = Int.random(in: 0...49)
-            currentStatesArray.append(stateIndexNumber)
+    
+    func showBacks() {
+        for i in 0..<cardButtons.count {
+            cardButtons[i].setBackgroundImage(defaultImage, for: .normal)
         }
     }
     
-    @IBAction func flipFlag(_ sender: UIButton) {
-        let selectedStateID = currentStatesArray[sender.tag]
+    
+    func setButtonTags() {
+        for (index, button) in cardButtons.enumerated() {
+            button.tag = index
+        }
+    }
+    
+    
+    @IBAction func dealNewCards(_ sender: UIButton) {
+        selectedCardsIndexes.removeAll()
+        for button in cardButtons {
+            game.cards[button.tag].isMatched = false
+            cardButtons[button.tag].isHidden = false
+        }
+        showBacks()
+        game.dealCards(numberOfCards: cardButtons.count)
+    }
+    
+    
+    @IBAction func flipCard(_ sender: UIButton) {
+        if gamePausedForDelay {
+            return
+        }
+        if !selectedCardsIndexes.isEmpty && selectedCardsIndexes[0] == sender.tag {
+            return
+        }
+        game.flipCard(cardNumber: sender.tag)
+        let cardLocation = sender.tag
+        selectedCardsIndexes.append(cardLocation)
+        let selectedStateID = game.cards[cardLocation].stateID
         let selectedStateName = stateDetails[selectedStateID].name
-        print(selectedStateName)
         let selectedFlagImage = UIImage.init(named: selectedStateName)
         sender.setBackgroundImage(selectedFlagImage, for: .normal)
-    }
-    
-    @IBAction func showFlag(_ sender: UIButton) {
+        playSound("card-flip")
+        if selectedCardsIndexes.count % 2 == 0 {
+            gamePausedForDelay = true
+            afterDelay(0.8) {
+                self.gamePausedForDelay = false
+                if self.game.cards[cardLocation].isMatched == true {
+                        for cardIndex in self.selectedCardsIndexes {
+                            self.cardButtons[cardIndex].isHidden = true
+                            playSound("correct")
+                            //FIXME: WHEN NO CARDS LEFT PLAY "WIN" SOUND
+                        }
+                    } else if self.game.cards[cardLocation].isMatched == false {
+                        playSound("wrong")
+                        for cardIndex in self.selectedCardsIndexes {
+                            self.cardButtons[cardIndex].setBackgroundImage(self.defaultImage, for: .normal)
+                        }
+                    }
+                    self.selectedCardsIndexes.removeAll()
+                }
+            } else {
+            }
+        }
         
-    }
     
-    @IBAction func newStates(_ sender: UIButton) {
-        shuffleStates()
-    }
+        func afterDelay(_ seconds: Double, run: @escaping () -> Void) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds, execute: run)
+        }
+        
+        
+        
 }
+
+
+

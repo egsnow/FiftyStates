@@ -9,15 +9,22 @@
 import Foundation
 
 
-
-
-
 struct MemoryCard {
     
+    
     var stateID: Int
+//    var isFaceUp = false
+    var isMatched = false {
+        didSet {
+            print ("is matched = \(self.isMatched)")
+        }
+    }
+    
 
-    
-    
+
+    init() {
+        stateID = Int.random(in: 0...49)
+    }
     
     
     
