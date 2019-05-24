@@ -20,14 +20,15 @@ class StateInfoVC: UIViewController {
     @IBOutlet weak var stateBirdImage: UIImageView!
     @IBOutlet weak var stateFlowerImage: UIImageView!
     @IBOutlet weak var stateFlowerLabel: UILabel!
-
+    @IBOutlet var stateFlagImages: UIView!
+    @IBOutlet var invisibleFlag: Pictures!
     
     var stateIndexNumber: Int?
     var birdImageName = ""
     var flowerImageName = ""
     var flashcardSettings = [true, true, true]
     var usingFlashcards = false
-
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,7 @@ class StateInfoVC: UIViewController {
         adjustFlashcardSettings()
         shuffleState()
         updateState()
-        
+        hideFlag()
     }
     
     
@@ -48,8 +49,10 @@ class StateInfoVC: UIViewController {
             stateNameLabel.isHidden = true
         }
         if flashcardSettings[1] == true {
+            invisibleFlag.isHidden = true
             stateFlagImage.isHidden = false
         } else {
+            invisibleFlag.isHidden = true
             stateFlagImage.isHidden = true
         }
         if flashcardSettings[2] == true {
@@ -70,6 +73,7 @@ class StateInfoVC: UIViewController {
         if let nameOfState = stateIndexNumber {
             birdImageName = stateDetails[nameOfState].abbreviation + "bird"
             flowerImageName = stateDetails[nameOfState].abbreviation + "flower"
+            invisibleFlag.image = UIImage.init(named: "AaHiddenFlag")
             stateNameLabel.text = "State Name:\n" + stateDetails[nameOfState].name
             stateAbbreviationLabel.text = "State Abbreviation:\n" + stateDetails[nameOfState].abbreviation
             stateFlagImage.image = UIImage.init(named: stateDetails[nameOfState].name)
@@ -115,6 +119,14 @@ class StateInfoVC: UIViewController {
         if let nameOfState = stateIndexNumber {
             controller.stateName = stateDetails[nameOfState].name
         }
+    }
+    
+    
+    func hideFlag() {
+        stateFlagImages.layer.cornerRadius = 10
+        stateFlagImages.layer.masksToBounds = true
+        stateFlagImages.layer.borderWidth = 3
+        stateFlagImages.layer.borderColor = UIColor.white.cgColor
     }
 }
 

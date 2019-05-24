@@ -18,58 +18,93 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szv-Gk-cdW" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="52" y="507" width="310" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
-                                <state key="normal" title="STATES">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="KhF-R5-NQE" kind="show" id="o5y-d3-5Ey"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQe-iy-pnH" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="52" y="611" width="310" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
-                                <state key="normal" title="FLASH CARDS">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="8SB-OC-p8f" kind="show" id="z3D-Iq-rAA"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="usa" translatesAutoresizingMaskIntoConstraints="NO" id="0Yc-Qk-QwC">
-                                <rect key="frame" x="52" y="277" width="310" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.59105408191680908" green="0.1692868173122406" blue="0.16256529092788696" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FIFTY STATES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wYd-F9-T5v">
-                                <rect key="frame" x="52" y="108" width="310" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="37"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="shadowColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="shadowOffset" width="4" height="4"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqx-hu-ahn" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="52" y="715" width="310" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
-                                <state key="normal" title="MEMORY GAME">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Wer-Hc-5xD" kind="show" identifier="MemoryGame" id="b1x-hv-wr0"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="ukc-Wh-VD8">
+                                <rect key="frame" x="20" y="108" width="374" height="734"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="Zlw-PX-MBN">
+                                        <rect key="frame" x="0.0" y="0.0" width="265.66666666666669" height="349"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wYd-F9-T5v">
+                                                <rect key="frame" x="0.0" y="0.0" width="265.66666666666669" height="155.66666666666666"/>
+                                                <string key="text">FIFTY 
+STATES</string>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="60"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="shadowColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <size key="shadowOffset" width="4" height="4"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usa" translatesAutoresizingMaskIntoConstraints="NO" id="0Yc-Qk-QwC">
+                                                <rect key="frame" x="0.0" y="189.66666666666669" width="265.66666666666669" height="159.33333333333331"/>
+                                                <color key="tintColor" red="0.59105408191680908" green="0.1692868173122406" blue="0.16256529092788696" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="0Yc-Qk-QwC" secondAttribute="height" multiplier="3:1.8" id="v9O-gM-3cH"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="STa-uI-APq">
+                                        <rect key="frame" x="0.0" y="383" width="374" height="351"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="x2g-Nq-ac2">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="351"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szv-Gk-cdW" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="107.66666666666667"/>
+                                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        <state key="normal" title="STATES">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="KhF-R5-NQE" kind="show" id="o5y-d3-5Ey"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQe-iy-pnH" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="121.66666666666663" width="374" height="107.66666666666669"/>
+                                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        <state key="normal" title="FLASH CARDS">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="8SB-OC-p8f" kind="show" id="z3D-Iq-rAA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqx-hu-ahn" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="243.33333333333334" width="374" height="107.66666666666666"/>
+                                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        <state key="normal" title="MEMORY GAME">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="Wer-Hc-5xD" kind="show" identifier="MemoryGame" id="b1x-hv-wr0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="STa-uI-APq" firstAttribute="leading" secondItem="ukc-Wh-VD8" secondAttribute="leading" id="DFm-6M-5We"/>
+                                    <constraint firstAttribute="bottom" secondItem="STa-uI-APq" secondAttribute="bottom" id="MBS-ej-XJt"/>
+                                    <constraint firstAttribute="trailing" secondItem="STa-uI-APq" secondAttribute="trailing" id="Pk8-62-hO4"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ukc-Wh-VD8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="f0b-Pb-t9b"/>
+                            <constraint firstAttribute="trailing" secondItem="ukc-Wh-VD8" secondAttribute="trailing" constant="20" symbolic="YES" id="jNh-jx-BiJ"/>
+                            <constraint firstItem="ukc-Wh-VD8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sb9-Vg-DX5"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ukc-Wh-VD8" secondAttribute="bottom" constant="20" id="uGj-Bv-hbz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="50 STATES" id="f79-7j-nWu"/>
+                    <connections>
+                        <outlet property="flagMap" destination="0Yc-Qk-QwC" id="z0U-sT-cOx"/>
+                        <outlet property="logoLabel" destination="wYd-F9-T5v" id="vCq-eV-hvH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,82 +118,97 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnm-oF-Ye7" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="120" y="500" width="175" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <state key="normal" title="Load Flashcards">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="loadFlashcards:" destination="8SB-OC-p8f" eventType="touchUpInside" id="GM8-de-WH1"/>
-                                </connections>
-                            </button>
-                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ERz-57-yul">
-                                <rect key="frame" x="135" y="183" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switches:" destination="8SB-OC-p8f" eventType="valueChanged" id="aTT-TG-cE9"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIM-1c-v8k">
-                                <rect key="frame" x="135" y="263" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switches:" destination="8SB-OC-p8f" eventType="valueChanged" id="AEQ-Ku-QDt"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X9L-nL-B3x">
-                                <rect key="frame" x="135" y="348" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switches:" destination="8SB-OC-p8f" eventType="valueChanged" id="D3S-UQ-Pqn"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIc-ct-ARW">
-                                <rect key="frame" x="20" y="188" width="52" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On will be shown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqv-k4-0jv">
-                                <rect key="frame" x="233" y="188" width="167" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8e-7i-00h">
-                                <rect key="frame" x="20" y="268" width="43" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On will be shown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77k-kE-UKh">
-                                <rect key="frame" x="233" y="268" width="167" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjd-DT-s9F">
-                                <rect key="frame" x="20" y="353" width="44" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On will be shown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RF-PX-pmg">
-                                <rect key="frame" x="233" y="353" width="167" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="KdT-Uo-5xI">
+                                <rect key="frame" x="62.333333333333343" y="209.66666666666663" width="289.33333333333326" height="477"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="Rqv-k4-0jv">
+                                        <rect key="frame" x="0.0" y="0.0" width="289.33333333333331" height="141.66666666666666"/>
+                                        <string key="text">Turn off fields
+to hide data
+from initial view 
+of flash cards.</string>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gwT-Wv-bCV">
+                                        <rect key="frame" x="70.000000000000014" y="208.66666666666663" width="149.33333333333337" height="113"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="uJO-bS-PbV">
+                                                <rect key="frame" x="0.0" y="0.0" width="149.33333333333334" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIc-ct-ARW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75.333333333333329" height="31"/>
+                                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ERz-57-yul">
+                                                        <rect key="frame" x="100.33333333333331" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="switches:" destination="8SB-OC-p8f" eventType="valueChanged" id="aTT-TG-cE9"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="J9e-jn-kWp">
+                                                <rect key="frame" x="0.0" y="41" width="149.33333333333334" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8e-7i-00h">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50.333333333333336" height="31"/>
+                                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIM-1c-v8k">
+                                                        <rect key="frame" x="100.33333333333331" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="switches:" destination="8SB-OC-p8f" eventType="valueChanged" id="AEQ-Ku-QDt"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="sjT-IC-bcg">
+                                                <rect key="frame" x="0.0" y="82" width="149.33333333333334" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjd-DT-s9F">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.333333333333329" height="31"/>
+                                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X9L-nL-B3x">
+                                                        <rect key="frame" x="100.33333333333331" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="switches:" destination="8SB-OC-p8f" eventType="valueChanged" id="D3S-UQ-Pqn"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnm-oF-Ye7" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                        <rect key="frame" x="27.999999999999986" y="442" width="233.33333333333331" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="hnm-oF-Ye7" secondAttribute="height" multiplier="20:3" id="LrG-QC-gJ0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                        <state key="normal" title="Load Flashcards">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loadFlashcards:" destination="8SB-OC-p8f" eventType="touchUpInside" id="GM8-de-WH1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="KdT-Uo-5xI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4R4-rU-ka7" secondAttribute="top" constant="10" id="5gY-vt-Jmo"/>
+                            <constraint firstItem="KdT-Uo-5xI" firstAttribute="centerX" secondItem="GSf-hM-WA9" secondAttribute="centerX" id="V32-UH-kFY"/>
+                            <constraint firstItem="KdT-Uo-5xI" firstAttribute="centerY" secondItem="GSf-hM-WA9" secondAttribute="centerY" id="lbi-Ki-UdO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4R4-rU-ka7"/>
                     </view>
                     <navigationItem key="navigationItem" title="SETTINGS" id="TOS-PO-oiy"/>
@@ -172,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cND-Jg-4sd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1841" y="478"/>
+            <point key="canvasLocation" x="1840.5797101449277" y="477.45535714285711"/>
         </scene>
         <!--STATES-->
         <scene sceneID="Mq4-0q-GKM">
@@ -218,58 +268,111 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O3q-sa-05A" customClass="Pictures" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="55" y="159" width="316" height="193"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxb-eQ-9bY">
-                                <rect key="frame" x="55" y="508" width="316" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Abbreviation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56D-pK-Ko9">
-                                <rect key="frame" x="55" y="567" width="316" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Bird" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdU-mg-r3Z">
-                                <rect key="frame" x="55" y="685" width="316" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Capital" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzE-7o-4V3">
-                                <rect key="frame" x="55" y="626" width="316" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State Flower" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0C-vL-Kuo">
-                                <rect key="frame" x="55" y="744" width="316" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gIO-Sv-acF" customClass="Pictures" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="55" y="351" width="158" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ncP-fv-0RE" customClass="Pictures" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="213" y="351" width="158" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="GtI-UI-hEG">
+                                <rect key="frame" x="19.666666666666657" y="108" width="374.66666666666674" height="734"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="EpJ-BW-EwG">
+                                        <rect key="frame" x="0.0" y="0.0" width="374.66666666666669" height="437.66666666666669"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kb9-S5-IVD">
+                                                <rect key="frame" x="0.0" y="0.0" width="374.66666666666669" height="249.66666666666666"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O3q-sa-05A" customClass="Pictures" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374.66666666666669" height="249.66666666666666"/>
+                                                        <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QP0-85-tsP" userLabel="Invisible" customClass="Pictures" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="-1" y="0.0" width="374.66666666666669" height="249.66666666666666"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.014949268661439419" green="0.013143224641680717" blue="0.24708825349807739" alpha="0.7713238441780822" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="O3q-sa-05A" secondAttribute="trailing" id="CeS-gy-4wE"/>
+                                                    <constraint firstItem="O3q-sa-05A" firstAttribute="leading" secondItem="kb9-S5-IVD" secondAttribute="leading" id="GFp-0K-qpZ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="O3q-sa-05A" secondAttribute="bottom" id="h6I-vL-CFY"/>
+                                                    <constraint firstItem="O3q-sa-05A" firstAttribute="top" secondItem="kb9-S5-IVD" secondAttribute="top" id="rmD-La-DcY"/>
+                                                    <constraint firstAttribute="width" secondItem="kb9-S5-IVD" secondAttribute="height" multiplier="3:2" id="uEW-Mo-he3"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="5dr-4y-rvN">
+                                                <rect key="frame" x="0.0" y="252.66666666666669" width="374.66666666666669" height="185"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gIO-Sv-acF" customClass="Pictures" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="185.33333333333334" height="185"/>
+                                                        <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="gIO-Sv-acF" secondAttribute="height" multiplier="1:1" id="eos-ig-T1O"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ncP-fv-0RE" customClass="Pictures" customModule="Fifty_States" customModuleProvider="target">
+                                                        <rect key="frame" x="189.33333333333331" y="0.0" width="185.33333333333331" height="185"/>
+                                                        <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="ncP-fv-0RE" secondAttribute="height" multiplier="1:1" id="GYC-WZ-7xK"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="zk0-WJ-4EV">
+                                        <rect key="frame" x="0.0" y="440.66666666666663" width="374.66666666666669" height="293.33333333333337"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fxb-eQ-9bY">
+                                                <rect key="frame" x="0.0" y="0.0" width="374.66666666666669" height="56.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State Abbreviation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="56D-pK-Ko9">
+                                                <rect key="frame" x="0.0" y="59.333333333333371" width="374.66666666666669" height="56.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State Capital" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BzE-7o-4V3">
+                                                <rect key="frame" x="0.0" y="118.66666666666674" width="374.66666666666669" height="56"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State Bird" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QdU-mg-r3Z">
+                                                <rect key="frame" x="0.0" y="177.66666666666674" width="374.66666666666669" height="56.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State Flower" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V0C-vL-Kuo">
+                                                <rect key="frame" x="0.0" y="237.00000000000003" width="374.66666666666669" height="56.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zk0-WJ-4EV" secondAttribute="height" multiplier="374:293" id="LOa-5Z-eJ6"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="zk0-WJ-4EV" secondAttribute="bottom" id="Ebf-40-uCu"/>
+                                    <constraint firstItem="zk0-WJ-4EV" firstAttribute="leading" secondItem="GtI-UI-hEG" secondAttribute="leading" id="GmX-Fa-vOJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="EpJ-BW-EwG" secondAttribute="trailing" id="HPB-op-xgU"/>
+                                    <constraint firstItem="zk0-WJ-4EV" firstAttribute="top" secondItem="EpJ-BW-EwG" secondAttribute="bottom" constant="3" id="KcJ-1o-WoS"/>
+                                    <constraint firstAttribute="trailing" secondItem="zk0-WJ-4EV" secondAttribute="trailing" id="TDF-Yf-5wV"/>
+                                    <constraint firstItem="EpJ-BW-EwG" firstAttribute="top" secondItem="GtI-UI-hEG" secondAttribute="top" id="it3-bQ-C3K"/>
+                                    <constraint firstItem="EpJ-BW-EwG" firstAttribute="leading" secondItem="GtI-UI-hEG" secondAttribute="leading" id="kT0-ae-PkA"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="GtI-UI-hEG" firstAttribute="centerX" secondItem="ppA-XA-l5L" secondAttribute="centerX" id="May-Xa-0iW"/>
+                            <constraint firstItem="xWP-06-x14" firstAttribute="bottom" secondItem="GtI-UI-hEG" secondAttribute="bottom" constant="20" id="QdY-jQ-fAz"/>
+                            <constraint firstItem="GtI-UI-hEG" firstAttribute="top" secondItem="xWP-06-x14" secondAttribute="top" constant="20" id="r7x-Sv-uBG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xWP-06-x14"/>
                     </view>
                     <navigationItem key="navigationItem" title="STATE" id="tFh-6M-0U4">
@@ -280,11 +383,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="invisibleFlag" destination="QP0-85-tsP" id="bE4-2u-tpx"/>
                         <outlet property="stateAbbreviationLabel" destination="56D-pK-Ko9" id="9wE-Jc-t5H"/>
                         <outlet property="stateBirdImage" destination="gIO-Sv-acF" id="2Pu-bE-776"/>
                         <outlet property="stateBirdLabel" destination="QdU-mg-r3Z" id="6aV-eC-beG"/>
                         <outlet property="stateCapitalLabel" destination="BzE-7o-4V3" id="X38-gG-6uQ"/>
                         <outlet property="stateFlagImage" destination="O3q-sa-05A" id="jRv-bR-mBm"/>
+                        <outlet property="stateFlagImages" destination="kb9-S5-IVD" id="uIM-69-oVW"/>
                         <outlet property="stateFlowerImage" destination="ncP-fv-0RE" id="a9b-9E-WMw"/>
                         <outlet property="stateFlowerLabel" destination="V0C-vL-Kuo" id="cI0-Nl-cOK"/>
                         <outlet property="stateNameLabel" destination="fxb-eQ-9bY" id="Hcb-n0-ofj"/>
@@ -314,10 +419,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="OCV-6Y-h9X" firstAttribute="trailing" secondItem="9g6-Vh-JgK" secondAttribute="trailing" id="DnW-Uv-NAV"/>
-                            <constraint firstAttribute="bottom" secondItem="9g6-Vh-JgK" secondAttribute="bottom" id="Gub-tS-hSw"/>
-                            <constraint firstItem="9g6-Vh-JgK" firstAttribute="leading" secondItem="OCV-6Y-h9X" secondAttribute="leading" id="KSP-CA-lKh"/>
-                            <constraint firstItem="9g6-Vh-JgK" firstAttribute="top" secondItem="OCV-6Y-h9X" secondAttribute="top" id="Mhq-ac-FbC"/>
+                            <constraint firstItem="9g6-Vh-JgK" firstAttribute="top" secondItem="OCV-6Y-h9X" secondAttribute="top" id="NTX-rz-Oli"/>
+                            <constraint firstAttribute="bottom" secondItem="9g6-Vh-JgK" secondAttribute="bottom" id="ZFe-oV-lIH"/>
+                            <constraint firstItem="9g6-Vh-JgK" firstAttribute="leading" secondItem="OCV-6Y-h9X" secondAttribute="leading" id="cVw-E7-j0l"/>
+                            <constraint firstItem="9g6-Vh-JgK" firstAttribute="trailing" secondItem="OCV-6Y-h9X" secondAttribute="trailing" id="jOp-Hv-P5V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OCV-6Y-h9X"/>
                     </view>
@@ -365,264 +470,732 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rR3-9i-bc4" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="20" y="118" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="T1j-2N-O38"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvO-p0-wQz" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="147" y="118" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="zgz-62-ebC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GN9-uy-1gH" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="274" y="118" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="nKc-ju-kaG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="5" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vh-rl-g5f" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="274" y="188" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="1nf-b2-K83"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRn-l3-mTs" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="20" y="188" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="46Q-Sl-6I7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4j-2F-myq" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="147" y="188" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="d4V-KJ-WGd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="6" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCS-Bv-PCA" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="20" y="258" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="FQF-Y7-9Ps"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="7" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T29-Q9-ctz" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="147" y="258" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="ZSS-fp-dx1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="9" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmX-14-mp8" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="20" y="328" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="IgL-kt-yOe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="10" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5M-N4-lxV" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="147" y="328" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="Hss-3W-baU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="12" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arX-HU-T1q" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="20" y="398" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="3bz-qg-760"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="13" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlW-9K-5hQ" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="147" y="398" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="7YD-ET-Xpe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="8" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YT-Pv-DB9" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="274" y="258" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="Wfk-Jg-D8q"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="11" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uK7-BC-MAi" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="274" y="328" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="CXf-18-gfp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="14" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBG-Y0-pqA" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="274" y="398" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="Xyo-hG-drp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="15" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGD-Et-a7h" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="20" y="468" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="hds-Td-OT9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="16" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSh-e6-GJx" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="147" y="468" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="PAy-vQ-XjT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEQ-A8-8KH" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="274" y="468" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="5jY-Bf-jLC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="18" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ev-xI-xUr" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="20" y="538" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="Rm6-nD-ldw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwn-F1-D77" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="147" y="538" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="6xC-7F-19Y"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pX-4R-JAS" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="274" y="538" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="pYH-e2-Jpf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="21" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psw-0D-HvC" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="20" y="608" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="UOa-nj-cZU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Na-PF-yXS" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="147" y="608" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="6uq-22-1L3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xe1-CV-XNT" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="274" y="608" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="SRh-vm-vME"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="24" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIQ-LO-sbE" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="20" y="678" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="i55-6S-6tl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTy-Fp-jhT" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="147" y="678" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="u9D-XA-F5y"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HX-ZI-pcb" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="274" y="678" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="A2q-S6-H4U"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="27" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8VM-LC-RdD" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="20" y="748" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="MUh-bk-EAL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tue-vL-Up2" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="147" y="748" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="oK2-fK-Oo7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7X-Xq-kJE" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="274" y="748" width="120" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="dEY-5e-9lB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb4-9H-anV" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
-                                <rect key="frame" x="106" y="818" width="201" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
-                                <state key="normal" title="DEAL NEW CARDS">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="dealNewCards:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="6iW-LN-yx9"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="M32-vT-gnU">
+                                <rect key="frame" x="20" y="108" width="374" height="734"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="bQV-rD-zOn">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="693"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Yx2-XW-MFo">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="63"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwD-Kl-B9K">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rR3-9i-bc4" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="T1j-2N-O38"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="rR3-9i-bc4" secondAttribute="bottom" id="FGh-m5-ejB"/>
+                                                            <constraint firstItem="rR3-9i-bc4" firstAttribute="top" secondItem="cwD-Kl-B9K" secondAttribute="top" id="UzP-o8-JKL"/>
+                                                            <constraint firstAttribute="width" secondItem="cwD-Kl-B9K" secondAttribute="height" multiplier="120:63" id="XJo-Jr-aev"/>
+                                                            <constraint firstAttribute="trailing" secondItem="rR3-9i-bc4" secondAttribute="trailing" id="tBb-z7-Tig"/>
+                                                            <constraint firstItem="rR3-9i-bc4" firstAttribute="leading" secondItem="cwD-Kl-B9K" secondAttribute="leading" id="yBV-m5-oxz"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8q-Og-jG2">
+                                                        <rect key="frame" x="127" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvO-p0-wQz" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="zgz-62-ebC"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="PvO-p0-wQz" secondAttribute="trailing" id="789-iT-mYf"/>
+                                                            <constraint firstAttribute="bottom" secondItem="PvO-p0-wQz" secondAttribute="bottom" id="HCr-C5-lvz"/>
+                                                            <constraint firstItem="PvO-p0-wQz" firstAttribute="top" secondItem="F8q-Og-jG2" secondAttribute="top" id="Tw4-Jv-c6Q"/>
+                                                            <constraint firstAttribute="width" secondItem="F8q-Og-jG2" secondAttribute="height" multiplier="120:63" id="Uys-ch-jke"/>
+                                                            <constraint firstItem="PvO-p0-wQz" firstAttribute="leading" secondItem="F8q-Og-jG2" secondAttribute="leading" id="bXh-2p-mIw"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ra-pS-39q">
+                                                        <rect key="frame" x="254" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GN9-uy-1gH" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="nKc-ju-kaG"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstItem="GN9-uy-1gH" firstAttribute="top" secondItem="9Ra-pS-39q" secondAttribute="top" id="3OK-yr-hqL"/>
+                                                            <constraint firstAttribute="trailing" secondItem="GN9-uy-1gH" secondAttribute="trailing" id="4az-UN-K1x"/>
+                                                            <constraint firstAttribute="width" secondItem="9Ra-pS-39q" secondAttribute="height" multiplier="120:63" id="EGX-hT-UPi"/>
+                                                            <constraint firstItem="GN9-uy-1gH" firstAttribute="leading" secondItem="9Ra-pS-39q" secondAttribute="leading" id="RbV-gT-XVL"/>
+                                                            <constraint firstAttribute="bottom" secondItem="GN9-uy-1gH" secondAttribute="bottom" id="ugq-nl-iAs"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="KXp-E2-l0S">
+                                                <rect key="frame" x="0.0" y="70" width="374" height="63"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fuu-qp-fLu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="3" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRn-l3-mTs" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="46Q-Sl-6I7"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="rRn-l3-mTs" secondAttribute="bottom" id="5Ox-MV-CXI"/>
+                                                            <constraint firstAttribute="width" secondItem="Fuu-qp-fLu" secondAttribute="height" multiplier="120:63" id="h9z-Wf-7cG"/>
+                                                            <constraint firstItem="rRn-l3-mTs" firstAttribute="top" secondItem="Fuu-qp-fLu" secondAttribute="top" id="jHG-6T-xKW"/>
+                                                            <constraint firstItem="rRn-l3-mTs" firstAttribute="leading" secondItem="Fuu-qp-fLu" secondAttribute="leading" id="leB-te-n6d"/>
+                                                            <constraint firstAttribute="trailing" secondItem="rRn-l3-mTs" secondAttribute="trailing" id="mDq-TK-DdC"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUX-yb-bQp">
+                                                        <rect key="frame" x="127" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="4" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4j-2F-myq" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="d4V-KJ-WGd"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="sUX-yb-bQp" secondAttribute="height" multiplier="120:63" id="5yX-Cu-dmy"/>
+                                                            <constraint firstItem="r4j-2F-myq" firstAttribute="leading" secondItem="sUX-yb-bQp" secondAttribute="leading" id="KwQ-j3-9qK"/>
+                                                            <constraint firstAttribute="trailing" secondItem="r4j-2F-myq" secondAttribute="trailing" id="mMe-Yi-cie"/>
+                                                            <constraint firstItem="r4j-2F-myq" firstAttribute="top" secondItem="sUX-yb-bQp" secondAttribute="top" id="u1a-zi-DMP"/>
+                                                            <constraint firstAttribute="bottom" secondItem="r4j-2F-myq" secondAttribute="bottom" id="wC2-Jx-7e8"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNs-qZ-kfK">
+                                                        <rect key="frame" x="254" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="5" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vh-rl-g5f" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="1nf-b2-K83"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="xNs-qZ-kfK" secondAttribute="height" multiplier="120:63" id="EgT-sA-BEH"/>
+                                                            <constraint firstItem="1Vh-rl-g5f" firstAttribute="leading" secondItem="xNs-qZ-kfK" secondAttribute="leading" id="HLn-hx-bHT"/>
+                                                            <constraint firstAttribute="trailing" secondItem="1Vh-rl-g5f" secondAttribute="trailing" id="T3p-Pd-r2Z"/>
+                                                            <constraint firstItem="1Vh-rl-g5f" firstAttribute="top" secondItem="xNs-qZ-kfK" secondAttribute="top" id="gn0-JX-t01"/>
+                                                            <constraint firstAttribute="bottom" secondItem="1Vh-rl-g5f" secondAttribute="bottom" id="nnS-M9-IIG"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="3ts-Mm-RTf">
+                                                <rect key="frame" x="0.0" y="140" width="374" height="63"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5qF-jw-rj4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="6" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCS-Bv-PCA" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="FQF-Y7-9Ps"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="xCS-Bv-PCA" secondAttribute="trailing" id="WDA-OF-z9A"/>
+                                                            <constraint firstItem="xCS-Bv-PCA" firstAttribute="leading" secondItem="5qF-jw-rj4" secondAttribute="leading" id="bo6-fT-gcY"/>
+                                                            <constraint firstItem="xCS-Bv-PCA" firstAttribute="top" secondItem="5qF-jw-rj4" secondAttribute="top" id="cM8-7e-DPv"/>
+                                                            <constraint firstAttribute="width" secondItem="5qF-jw-rj4" secondAttribute="height" multiplier="120:63" id="rXu-0B-rTY"/>
+                                                            <constraint firstAttribute="bottom" secondItem="xCS-Bv-PCA" secondAttribute="bottom" id="xDD-eh-Bl9"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mED-e0-UT6">
+                                                        <rect key="frame" x="127" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="7" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T29-Q9-ctz" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="ZSS-fp-dx1"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="T29-Q9-ctz" secondAttribute="trailing" id="Nen-0f-4ov"/>
+                                                            <constraint firstAttribute="bottom" secondItem="T29-Q9-ctz" secondAttribute="bottom" id="Nww-kh-kBZ"/>
+                                                            <constraint firstAttribute="width" secondItem="mED-e0-UT6" secondAttribute="height" multiplier="120:63" id="RCr-6H-O4S"/>
+                                                            <constraint firstItem="T29-Q9-ctz" firstAttribute="leading" secondItem="mED-e0-UT6" secondAttribute="leading" id="eqZ-Ex-9F7"/>
+                                                            <constraint firstItem="T29-Q9-ctz" firstAttribute="top" secondItem="mED-e0-UT6" secondAttribute="top" id="tMT-uV-EVH"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eb7-Zo-VFo">
+                                                        <rect key="frame" x="254" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="8" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YT-Pv-DB9" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="Wfk-Jg-D8q"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="9YT-Pv-DB9" secondAttribute="trailing" id="ODS-NW-Zee"/>
+                                                            <constraint firstAttribute="bottom" secondItem="9YT-Pv-DB9" secondAttribute="bottom" id="aqQ-gM-ogY"/>
+                                                            <constraint firstItem="9YT-Pv-DB9" firstAttribute="leading" secondItem="eb7-Zo-VFo" secondAttribute="leading" id="eJw-7g-B53"/>
+                                                            <constraint firstItem="9YT-Pv-DB9" firstAttribute="top" secondItem="eb7-Zo-VFo" secondAttribute="top" id="iug-Is-6sn"/>
+                                                            <constraint firstAttribute="width" secondItem="eb7-Zo-VFo" secondAttribute="height" multiplier="120:63" id="smy-BD-QKp"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="3ft-SV-DP3">
+                                                <rect key="frame" x="0.0" y="210" width="374" height="63"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sb5-4g-ntR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="9" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmX-14-mp8" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="IgL-kt-yOe"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstItem="cmX-14-mp8" firstAttribute="leading" secondItem="Sb5-4g-ntR" secondAttribute="leading" id="HIc-gj-1a2"/>
+                                                            <constraint firstAttribute="width" secondItem="Sb5-4g-ntR" secondAttribute="height" multiplier="120:63" id="HTe-eQ-LqW"/>
+                                                            <constraint firstAttribute="bottom" secondItem="cmX-14-mp8" secondAttribute="bottom" id="aFu-1v-LbH"/>
+                                                            <constraint firstItem="cmX-14-mp8" firstAttribute="top" secondItem="Sb5-4g-ntR" secondAttribute="top" id="eh7-Oi-Pjl"/>
+                                                            <constraint firstAttribute="trailing" secondItem="cmX-14-mp8" secondAttribute="trailing" id="liL-iJ-gEv"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0C-KD-3Mh">
+                                                        <rect key="frame" x="127" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="10" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5M-N4-lxV" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="Hss-3W-baU"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="K5M-N4-lxV" secondAttribute="trailing" id="Lsc-PN-UHD"/>
+                                                            <constraint firstItem="K5M-N4-lxV" firstAttribute="leading" secondItem="r0C-KD-3Mh" secondAttribute="leading" id="Nsm-Wh-XZK"/>
+                                                            <constraint firstAttribute="bottom" secondItem="K5M-N4-lxV" secondAttribute="bottom" id="Vdd-Q4-FaH"/>
+                                                            <constraint firstItem="K5M-N4-lxV" firstAttribute="top" secondItem="r0C-KD-3Mh" secondAttribute="top" id="nSj-dm-0dX"/>
+                                                            <constraint firstAttribute="width" secondItem="r0C-KD-3Mh" secondAttribute="height" multiplier="120:63" id="nns-q3-zat"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bI-5O-zna">
+                                                        <rect key="frame" x="254" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="11" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uK7-BC-MAi" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="CXf-18-gfp"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="1bI-5O-zna" secondAttribute="height" multiplier="120:63" id="4cT-Ux-bII"/>
+                                                            <constraint firstAttribute="trailing" secondItem="uK7-BC-MAi" secondAttribute="trailing" id="KBJ-yF-BQe"/>
+                                                            <constraint firstItem="uK7-BC-MAi" firstAttribute="top" secondItem="1bI-5O-zna" secondAttribute="top" id="Oub-7G-e4I"/>
+                                                            <constraint firstItem="uK7-BC-MAi" firstAttribute="leading" secondItem="1bI-5O-zna" secondAttribute="leading" id="hAo-t6-o5B"/>
+                                                            <constraint firstAttribute="bottom" secondItem="uK7-BC-MAi" secondAttribute="bottom" id="zor-0b-X2h"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Cl5-zN-ybc">
+                                                <rect key="frame" x="0.0" y="280" width="374" height="63"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQS-dk-kFq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="12" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arX-HU-T1q" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="3bz-qg-760"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="arX-HU-T1q" secondAttribute="trailing" id="3iy-SC-VR3"/>
+                                                            <constraint firstItem="arX-HU-T1q" firstAttribute="leading" secondItem="EQS-dk-kFq" secondAttribute="leading" id="BDA-AA-Iws"/>
+                                                            <constraint firstAttribute="width" secondItem="EQS-dk-kFq" secondAttribute="height" multiplier="120:63" id="E0h-8M-UCs"/>
+                                                            <constraint firstItem="arX-HU-T1q" firstAttribute="top" secondItem="EQS-dk-kFq" secondAttribute="top" id="m4g-Fc-jmB"/>
+                                                            <constraint firstAttribute="bottom" secondItem="arX-HU-T1q" secondAttribute="bottom" id="opc-gm-DIX"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJ0-V8-JeP">
+                                                        <rect key="frame" x="127" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="13" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlW-9K-5hQ" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="7YD-ET-Xpe"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="WlW-9K-5hQ" secondAttribute="bottom" id="B1s-ha-J9W"/>
+                                                            <constraint firstAttribute="width" secondItem="rJ0-V8-JeP" secondAttribute="height" multiplier="120:63" id="O1S-Ld-M9n"/>
+                                                            <constraint firstItem="WlW-9K-5hQ" firstAttribute="leading" secondItem="rJ0-V8-JeP" secondAttribute="leading" id="QiM-lV-kev"/>
+                                                            <constraint firstItem="WlW-9K-5hQ" firstAttribute="top" secondItem="rJ0-V8-JeP" secondAttribute="top" id="UgP-G5-SKW"/>
+                                                            <constraint firstAttribute="trailing" secondItem="WlW-9K-5hQ" secondAttribute="trailing" id="d3R-xa-rUN"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTX-vL-VqQ">
+                                                        <rect key="frame" x="254" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="14" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBG-Y0-pqA" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="Xyo-hG-drp"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="GBG-Y0-pqA" secondAttribute="bottom" id="DfL-hP-uxr"/>
+                                                            <constraint firstAttribute="trailing" secondItem="GBG-Y0-pqA" secondAttribute="trailing" id="MxY-pu-TwS"/>
+                                                            <constraint firstItem="GBG-Y0-pqA" firstAttribute="leading" secondItem="nTX-vL-VqQ" secondAttribute="leading" id="nH7-fe-YOl"/>
+                                                            <constraint firstItem="GBG-Y0-pqA" firstAttribute="top" secondItem="nTX-vL-VqQ" secondAttribute="top" id="yVY-eW-F0I"/>
+                                                            <constraint firstAttribute="width" secondItem="nTX-vL-VqQ" secondAttribute="height" multiplier="120:63" id="zra-iJ-Pqe"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="rFp-Xm-DM9">
+                                                <rect key="frame" x="0.0" y="350" width="374" height="63"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TrO-Iu-vkM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="15" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGD-Et-a7h" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="hds-Td-OT9"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="pGD-Et-a7h" secondAttribute="trailing" id="0EO-U7-Jcj"/>
+                                                            <constraint firstItem="pGD-Et-a7h" firstAttribute="leading" secondItem="TrO-Iu-vkM" secondAttribute="leading" id="JYf-Mw-23H"/>
+                                                            <constraint firstAttribute="width" secondItem="TrO-Iu-vkM" secondAttribute="height" multiplier="120:63" id="LqO-U5-dTi"/>
+                                                            <constraint firstItem="pGD-Et-a7h" firstAttribute="top" secondItem="TrO-Iu-vkM" secondAttribute="top" id="adu-J8-RmX"/>
+                                                            <constraint firstAttribute="bottom" secondItem="pGD-Et-a7h" secondAttribute="bottom" id="cXp-30-O1Z"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSZ-hg-9ZT">
+                                                        <rect key="frame" x="127" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="16" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSh-e6-GJx" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="PAy-vQ-XjT"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="FSZ-hg-9ZT" secondAttribute="height" multiplier="120:63" id="Qln-NQ-a0T"/>
+                                                            <constraint firstAttribute="bottom" secondItem="xSh-e6-GJx" secondAttribute="bottom" id="h9w-QA-hDI"/>
+                                                            <constraint firstAttribute="trailing" secondItem="xSh-e6-GJx" secondAttribute="trailing" id="hce-Ca-rMe"/>
+                                                            <constraint firstItem="xSh-e6-GJx" firstAttribute="top" secondItem="FSZ-hg-9ZT" secondAttribute="top" id="oB1-Iq-JXd"/>
+                                                            <constraint firstItem="xSh-e6-GJx" firstAttribute="leading" secondItem="FSZ-hg-9ZT" secondAttribute="leading" id="wvs-fW-er6"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNB-gQ-j64">
+                                                        <rect key="frame" x="254" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEQ-A8-8KH" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="5jY-Bf-jLC"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="pEQ-A8-8KH" secondAttribute="trailing" id="KMH-Sz-4B3"/>
+                                                            <constraint firstAttribute="width" secondItem="cNB-gQ-j64" secondAttribute="height" multiplier="120:63" id="Ody-Jf-5El"/>
+                                                            <constraint firstAttribute="bottom" secondItem="pEQ-A8-8KH" secondAttribute="bottom" id="TOp-29-ltT"/>
+                                                            <constraint firstItem="pEQ-A8-8KH" firstAttribute="leading" secondItem="cNB-gQ-j64" secondAttribute="leading" id="UiP-0X-uL2"/>
+                                                            <constraint firstItem="pEQ-A8-8KH" firstAttribute="top" secondItem="cNB-gQ-j64" secondAttribute="top" id="lKj-Ec-hVY"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="19A-rM-wtE">
+                                                <rect key="frame" x="0.0" y="420" width="374" height="63"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02U-SO-hbk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="18" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ev-xI-xUr" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="Rm6-nD-ldw"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstItem="3Ev-xI-xUr" firstAttribute="top" secondItem="02U-SO-hbk" secondAttribute="top" id="EOx-iz-JkT"/>
+                                                            <constraint firstItem="3Ev-xI-xUr" firstAttribute="leading" secondItem="02U-SO-hbk" secondAttribute="leading" id="KaE-km-jxf"/>
+                                                            <constraint firstAttribute="bottom" secondItem="3Ev-xI-xUr" secondAttribute="bottom" id="ToT-of-bRO"/>
+                                                            <constraint firstAttribute="width" secondItem="02U-SO-hbk" secondAttribute="height" multiplier="120:63" id="ZIo-hR-nXl"/>
+                                                            <constraint firstAttribute="trailing" secondItem="3Ev-xI-xUr" secondAttribute="trailing" id="dnb-gI-Ggd"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUC-pn-c3o">
+                                                        <rect key="frame" x="127" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwn-F1-D77" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="6xC-7F-19Y"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="Fwn-F1-D77" secondAttribute="trailing" id="7Yc-Hw-cbK"/>
+                                                            <constraint firstAttribute="width" secondItem="fUC-pn-c3o" secondAttribute="height" multiplier="120:63" id="GbE-rL-P9v"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Fwn-F1-D77" secondAttribute="bottom" id="akN-3z-QmH"/>
+                                                            <constraint firstItem="Fwn-F1-D77" firstAttribute="top" secondItem="fUC-pn-c3o" secondAttribute="top" id="kdh-F8-RSr"/>
+                                                            <constraint firstItem="Fwn-F1-D77" firstAttribute="leading" secondItem="fUC-pn-c3o" secondAttribute="leading" id="lPJ-me-tJV"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxS-Ac-JJ5">
+                                                        <rect key="frame" x="254" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pX-4R-JAS" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="pYH-e2-Jpf"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstItem="7pX-4R-JAS" firstAttribute="leading" secondItem="fxS-Ac-JJ5" secondAttribute="leading" id="4Cm-YV-9Ht"/>
+                                                            <constraint firstAttribute="trailing" secondItem="7pX-4R-JAS" secondAttribute="trailing" id="9va-H1-2oe"/>
+                                                            <constraint firstItem="7pX-4R-JAS" firstAttribute="top" secondItem="fxS-Ac-JJ5" secondAttribute="top" id="HjX-yS-xWh"/>
+                                                            <constraint firstAttribute="width" secondItem="fxS-Ac-JJ5" secondAttribute="height" multiplier="120:63" id="PEy-M6-jfS"/>
+                                                            <constraint firstAttribute="bottom" secondItem="7pX-4R-JAS" secondAttribute="bottom" id="a9X-x5-A2J"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="SDw-DJ-AbS">
+                                                <rect key="frame" x="0.0" y="490" width="374" height="63"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Jx-Fl-J8L">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="21" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psw-0D-HvC" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="UOa-nj-cZU"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstItem="psw-0D-HvC" firstAttribute="leading" secondItem="3Jx-Fl-J8L" secondAttribute="leading" id="1WG-NH-naB"/>
+                                                            <constraint firstAttribute="bottom" secondItem="psw-0D-HvC" secondAttribute="bottom" id="PRh-NU-1B9"/>
+                                                            <constraint firstAttribute="trailing" secondItem="psw-0D-HvC" secondAttribute="trailing" id="XRm-md-g5Y"/>
+                                                            <constraint firstItem="psw-0D-HvC" firstAttribute="top" secondItem="3Jx-Fl-J8L" secondAttribute="top" id="nYe-Tz-X8H"/>
+                                                            <constraint firstAttribute="width" secondItem="3Jx-Fl-J8L" secondAttribute="height" multiplier="120:63" id="s0e-iB-5n4"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mgr-Qn-d3G">
+                                                        <rect key="frame" x="127" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Na-PF-yXS" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="6uq-22-1L3"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstItem="5Na-PF-yXS" firstAttribute="top" secondItem="Mgr-Qn-d3G" secondAttribute="top" id="10N-yn-jhU"/>
+                                                            <constraint firstAttribute="trailing" secondItem="5Na-PF-yXS" secondAttribute="trailing" id="6Bt-Vo-TXI"/>
+                                                            <constraint firstAttribute="bottom" secondItem="5Na-PF-yXS" secondAttribute="bottom" id="Evc-O1-vQE"/>
+                                                            <constraint firstAttribute="width" secondItem="Mgr-Qn-d3G" secondAttribute="height" multiplier="120:63" id="tpb-uN-5h0"/>
+                                                            <constraint firstItem="5Na-PF-yXS" firstAttribute="leading" secondItem="Mgr-Qn-d3G" secondAttribute="leading" id="zo1-rk-QHQ"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ulz-h8-yhY">
+                                                        <rect key="frame" x="254" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xe1-CV-XNT" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="SRh-vm-vME"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Xe1-CV-XNT" firstAttribute="top" secondItem="ulz-h8-yhY" secondAttribute="top" id="3r4-Qn-McX"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Xe1-CV-XNT" secondAttribute="trailing" id="47g-4n-C1H"/>
+                                                            <constraint firstAttribute="width" secondItem="ulz-h8-yhY" secondAttribute="height" multiplier="120:63" id="TS8-MQ-LFj"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Xe1-CV-XNT" secondAttribute="bottom" id="ayI-uq-97g"/>
+                                                            <constraint firstItem="Xe1-CV-XNT" firstAttribute="leading" secondItem="ulz-h8-yhY" secondAttribute="leading" id="chw-1F-m8R"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="V6n-FO-ZtD">
+                                                <rect key="frame" x="0.0" y="560" width="374" height="63"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ieX-me-Sov">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="24" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIQ-LO-sbE" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="i55-6S-6tl"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstItem="BIQ-LO-sbE" firstAttribute="leading" secondItem="ieX-me-Sov" secondAttribute="leading" id="BDl-ON-Vfl"/>
+                                                            <constraint firstItem="BIQ-LO-sbE" firstAttribute="top" secondItem="ieX-me-Sov" secondAttribute="top" id="ILU-il-ued"/>
+                                                            <constraint firstAttribute="trailing" secondItem="BIQ-LO-sbE" secondAttribute="trailing" id="Sj2-BA-jeB"/>
+                                                            <constraint firstAttribute="width" secondItem="ieX-me-Sov" secondAttribute="height" multiplier="120:63" id="VTG-oL-Unk"/>
+                                                            <constraint firstAttribute="bottom" secondItem="BIQ-LO-sbE" secondAttribute="bottom" id="w9d-GB-Fzc"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5TV-LC-56X">
+                                                        <rect key="frame" x="127" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTy-Fp-jhT" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="u9D-XA-F5y"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstItem="eTy-Fp-jhT" firstAttribute="top" secondItem="5TV-LC-56X" secondAttribute="top" id="JyG-OV-hNg"/>
+                                                            <constraint firstAttribute="trailing" secondItem="eTy-Fp-jhT" secondAttribute="trailing" id="SIA-ca-E4D"/>
+                                                            <constraint firstAttribute="width" secondItem="5TV-LC-56X" secondAttribute="height" multiplier="120:63" id="Sye-CF-I9S"/>
+                                                            <constraint firstAttribute="bottom" secondItem="eTy-Fp-jhT" secondAttribute="bottom" id="jOC-uZ-55k"/>
+                                                            <constraint firstItem="eTy-Fp-jhT" firstAttribute="leading" secondItem="5TV-LC-56X" secondAttribute="leading" id="xjy-QD-yxv"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NvP-nc-t08">
+                                                        <rect key="frame" x="254" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HX-ZI-pcb" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="A2q-S6-H4U"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="NvP-nc-t08" secondAttribute="height" multiplier="120:63" id="0b6-yh-qOd"/>
+                                                            <constraint firstItem="6HX-ZI-pcb" firstAttribute="leading" secondItem="NvP-nc-t08" secondAttribute="leading" id="9EE-sG-Li7"/>
+                                                            <constraint firstItem="6HX-ZI-pcb" firstAttribute="top" secondItem="NvP-nc-t08" secondAttribute="top" id="Jzv-ae-TX0"/>
+                                                            <constraint firstAttribute="bottom" secondItem="6HX-ZI-pcb" secondAttribute="bottom" id="iZq-Lg-ikh"/>
+                                                            <constraint firstAttribute="trailing" secondItem="6HX-ZI-pcb" secondAttribute="trailing" id="zvF-UZ-6wH"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="HFM-Uh-8AO">
+                                                <rect key="frame" x="0.0" y="630" width="374" height="63"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjh-2v-Y0C">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="27" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8VM-LC-RdD" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="MUh-bk-EAL"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstItem="8VM-LC-RdD" firstAttribute="top" secondItem="cjh-2v-Y0C" secondAttribute="top" id="8Is-8c-C5R"/>
+                                                            <constraint firstAttribute="trailing" secondItem="8VM-LC-RdD" secondAttribute="trailing" id="DD2-T2-Tmc"/>
+                                                            <constraint firstItem="8VM-LC-RdD" firstAttribute="leading" secondItem="cjh-2v-Y0C" secondAttribute="leading" id="Ly4-Ml-2nZ"/>
+                                                            <constraint firstAttribute="bottom" secondItem="8VM-LC-RdD" secondAttribute="bottom" id="aGJ-RY-HDy"/>
+                                                            <constraint firstAttribute="width" secondItem="cjh-2v-Y0C" secondAttribute="height" multiplier="120:63" id="rUm-Oy-Pyn"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeU-5P-xq0">
+                                                        <rect key="frame" x="127" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tue-vL-Up2" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="oK2-fK-Oo7"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="jeU-5P-xq0" secondAttribute="height" multiplier="120:63" id="Ipe-F7-gzz"/>
+                                                            <constraint firstItem="Tue-vL-Up2" firstAttribute="top" secondItem="jeU-5P-xq0" secondAttribute="top" id="lGN-A5-vD1"/>
+                                                            <constraint firstItem="Tue-vL-Up2" firstAttribute="leading" secondItem="jeU-5P-xq0" secondAttribute="leading" id="pSE-TK-bP3"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Tue-vL-Up2" secondAttribute="bottom" id="tdv-BP-DRQ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Tue-vL-Up2" secondAttribute="trailing" id="uja-HK-fBW"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3N-3r-rnO">
+                                                        <rect key="frame" x="254" y="0.0" width="120" height="63"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7X-Xq-kJE" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="63"/>
+                                                                <connections>
+                                                                    <action selector="flipCard:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="dEY-5e-9lB"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.015093364752829075" green="0.014322458766400814" blue="0.22355642914772034" alpha="0.77359803082191769" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="e7X-Xq-kJE" secondAttribute="bottom" id="Bl6-i0-j1W"/>
+                                                            <constraint firstItem="e7X-Xq-kJE" firstAttribute="leading" secondItem="O3N-3r-rnO" secondAttribute="leading" id="Tit-h9-X32"/>
+                                                            <constraint firstItem="e7X-Xq-kJE" firstAttribute="top" secondItem="O3N-3r-rnO" secondAttribute="top" id="mKa-1v-dvZ"/>
+                                                            <constraint firstAttribute="width" secondItem="O3N-3r-rnO" secondAttribute="height" multiplier="120:63" id="w4M-fw-twc"/>
+                                                            <constraint firstAttribute="trailing" secondItem="e7X-Xq-kJE" secondAttribute="trailing" id="wXh-Yz-0Uk"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bQV-rD-zOn" secondAttribute="height" multiplier="34:63" id="84c-wT-zdY"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb4-9H-anV" customClass="MenuButton" customModule="Fifty_States" customModuleProvider="target">
+                                        <rect key="frame" x="37" y="700" width="300" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="34" id="X5v-Xv-Pf4"/>
+                                            <constraint firstAttribute="width" secondItem="gb4-9H-anV" secondAttribute="height" multiplier="300:34" id="bzx-dl-CsX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
+                                        <state key="normal" title="DEAL CARDS">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="12"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="dealNewCards:" destination="Wer-Hc-5xD" eventType="touchUpInside" id="6iW-LN-yx9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="M32-vT-gnU" secondAttribute="height" multiplier="187:367" id="eJc-dr-XZx"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.014949268660000001" green="0.013143224639999999" blue="0.24708825349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="M32-vT-gnU" firstAttribute="top" secondItem="dcP-iz-Tvv" secondAttribute="top" constant="20" id="Tzw-ow-I2D"/>
+                            <constraint firstItem="dcP-iz-Tvv" firstAttribute="bottom" secondItem="M32-vT-gnU" secondAttribute="bottom" constant="20" id="cjr-rf-0wY"/>
+                            <constraint firstItem="M32-vT-gnU" firstAttribute="centerX" secondItem="58g-wd-L5w" secondAttribute="centerX" id="rsS-LO-eK0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dcP-iz-Tvv"/>
                     </view>
                     <navigationItem key="navigationItem" title="MEMORY" id="lhz-tm-1Xt"/>
                     <connections>
                         <outlet property="dealCardsButton" destination="gb4-9H-anV" id="vtf-8L-9UB"/>
                         <outletCollection property="cardButtons" destination="rR3-9i-bc4" collectionClass="NSMutableArray" id="anS-eI-SFc"/>
+                        <outletCollection property="cardButtons" destination="PvO-p0-wQz" collectionClass="NSMutableArray" id="KgV-hD-KZV"/>
+                        <outletCollection property="cardButtons" destination="GN9-uy-1gH" collectionClass="NSMutableArray" id="vgU-OS-RLn"/>
                         <outletCollection property="cardButtons" destination="rRn-l3-mTs" collectionClass="NSMutableArray" id="nWN-1t-cSd"/>
                         <outletCollection property="cardButtons" destination="xCS-Bv-PCA" collectionClass="NSMutableArray" id="cBc-Lm-01D"/>
-                        <outletCollection property="cardButtons" destination="cmX-14-mp8" collectionClass="NSMutableArray" id="hF0-cb-YAb"/>
-                        <outletCollection property="cardButtons" destination="arX-HU-T1q" collectionClass="NSMutableArray" id="Ap0-Ts-MCQ"/>
-                        <outletCollection property="cardButtons" destination="pGD-Et-a7h" collectionClass="NSMutableArray" id="BeG-KI-IVC"/>
-                        <outletCollection property="cardButtons" destination="3Ev-xI-xUr" collectionClass="NSMutableArray" id="XHJ-ye-WMj"/>
-                        <outletCollection property="cardButtons" destination="psw-0D-HvC" collectionClass="NSMutableArray" id="ntq-dh-pxw"/>
-                        <outletCollection property="cardButtons" destination="BIQ-LO-sbE" collectionClass="NSMutableArray" id="grx-dX-0b1"/>
-                        <outletCollection property="cardButtons" destination="8VM-LC-RdD" collectionClass="NSMutableArray" id="Li1-Wc-uy5"/>
-                        <outletCollection property="cardButtons" destination="PvO-p0-wQz" collectionClass="NSMutableArray" id="KgV-hD-KZV"/>
                         <outletCollection property="cardButtons" destination="r4j-2F-myq" collectionClass="NSMutableArray" id="kNe-cK-FK7"/>
-                        <outletCollection property="cardButtons" destination="T29-Q9-ctz" collectionClass="NSMutableArray" id="t5O-f4-toM"/>
-                        <outletCollection property="cardButtons" destination="K5M-N4-lxV" collectionClass="NSMutableArray" id="xmO-J5-Jw2"/>
-                        <outletCollection property="cardButtons" destination="WlW-9K-5hQ" collectionClass="NSMutableArray" id="KBP-Dm-Nwd"/>
-                        <outletCollection property="cardButtons" destination="xSh-e6-GJx" collectionClass="NSMutableArray" id="hfk-u0-2FH"/>
-                        <outletCollection property="cardButtons" destination="Fwn-F1-D77" collectionClass="NSMutableArray" id="QNl-PK-mLC"/>
-                        <outletCollection property="cardButtons" destination="5Na-PF-yXS" collectionClass="NSMutableArray" id="6Mo-xc-J6J"/>
-                        <outletCollection property="cardButtons" destination="eTy-Fp-jhT" collectionClass="NSMutableArray" id="rAw-Od-b5g"/>
-                        <outletCollection property="cardButtons" destination="Tue-vL-Up2" collectionClass="NSMutableArray" id="COk-SP-y1D"/>
-                        <outletCollection property="cardButtons" destination="GN9-uy-1gH" collectionClass="NSMutableArray" id="vgU-OS-RLn"/>
                         <outletCollection property="cardButtons" destination="1Vh-rl-g5f" collectionClass="NSMutableArray" id="n2y-b0-cFE"/>
+                        <outletCollection property="cardButtons" destination="T29-Q9-ctz" collectionClass="NSMutableArray" id="t5O-f4-toM"/>
                         <outletCollection property="cardButtons" destination="9YT-Pv-DB9" collectionClass="NSMutableArray" id="ZgK-yZ-qPj"/>
+                        <outletCollection property="cardButtons" destination="cmX-14-mp8" collectionClass="NSMutableArray" id="hF0-cb-YAb"/>
+                        <outletCollection property="cardButtons" destination="K5M-N4-lxV" collectionClass="NSMutableArray" id="xmO-J5-Jw2"/>
                         <outletCollection property="cardButtons" destination="uK7-BC-MAi" collectionClass="NSMutableArray" id="CAh-V3-c4d"/>
+                        <outletCollection property="cardButtons" destination="arX-HU-T1q" collectionClass="NSMutableArray" id="Ap0-Ts-MCQ"/>
+                        <outletCollection property="cardButtons" destination="WlW-9K-5hQ" collectionClass="NSMutableArray" id="KBP-Dm-Nwd"/>
                         <outletCollection property="cardButtons" destination="GBG-Y0-pqA" collectionClass="NSMutableArray" id="Wdv-HU-e7S"/>
+                        <outletCollection property="cardButtons" destination="pGD-Et-a7h" collectionClass="NSMutableArray" id="BeG-KI-IVC"/>
                         <outletCollection property="cardButtons" destination="pEQ-A8-8KH" collectionClass="NSMutableArray" id="AOP-yy-U7s"/>
+                        <outletCollection property="cardButtons" destination="xSh-e6-GJx" collectionClass="NSMutableArray" id="hfk-u0-2FH"/>
+                        <outletCollection property="cardButtons" destination="3Ev-xI-xUr" collectionClass="NSMutableArray" id="XHJ-ye-WMj"/>
+                        <outletCollection property="cardButtons" destination="Fwn-F1-D77" collectionClass="NSMutableArray" id="QNl-PK-mLC"/>
                         <outletCollection property="cardButtons" destination="7pX-4R-JAS" collectionClass="NSMutableArray" id="JmI-kE-1pc"/>
+                        <outletCollection property="cardButtons" destination="psw-0D-HvC" collectionClass="NSMutableArray" id="ntq-dh-pxw"/>
+                        <outletCollection property="cardButtons" destination="5Na-PF-yXS" collectionClass="NSMutableArray" id="6Mo-xc-J6J"/>
                         <outletCollection property="cardButtons" destination="Xe1-CV-XNT" collectionClass="NSMutableArray" id="w7S-VC-2hl"/>
+                        <outletCollection property="cardButtons" destination="BIQ-LO-sbE" collectionClass="NSMutableArray" id="grx-dX-0b1"/>
+                        <outletCollection property="cardButtons" destination="eTy-Fp-jhT" collectionClass="NSMutableArray" id="rAw-Od-b5g"/>
                         <outletCollection property="cardButtons" destination="6HX-ZI-pcb" collectionClass="NSMutableArray" id="q5l-cC-gjZ"/>
+                        <outletCollection property="cardButtons" destination="8VM-LC-RdD" collectionClass="NSMutableArray" id="Li1-Wc-uy5"/>
+                        <outletCollection property="cardButtons" destination="Tue-vL-Up2" collectionClass="NSMutableArray" id="COk-SP-y1D"/>
                         <outletCollection property="cardButtons" destination="e7X-Xq-kJE" collectionClass="NSMutableArray" id="Twb-1K-MJz"/>
+                        <outletCollection property="flagViews" destination="cwD-Kl-B9K" collectionClass="NSMutableArray" id="gmC-zH-wHd"/>
+                        <outletCollection property="flagViews" destination="cwD-Kl-B9K" collectionClass="NSMutableArray" id="2qM-Ix-niU"/>
+                        <outletCollection property="flagViews" destination="F8q-Og-jG2" collectionClass="NSMutableArray" id="fRa-Tj-gcM"/>
+                        <outletCollection property="flagViews" destination="9Ra-pS-39q" collectionClass="NSMutableArray" id="ddy-jX-aWq"/>
+                        <outletCollection property="flagViews" destination="Fuu-qp-fLu" collectionClass="NSMutableArray" id="jVY-sg-ucv"/>
+                        <outletCollection property="flagViews" destination="sUX-yb-bQp" collectionClass="NSMutableArray" id="Ox6-JC-JHJ"/>
+                        <outletCollection property="flagViews" destination="xNs-qZ-kfK" collectionClass="NSMutableArray" id="9EH-5B-um2"/>
+                        <outletCollection property="flagViews" destination="5qF-jw-rj4" collectionClass="NSMutableArray" id="DbU-Ws-acs"/>
+                        <outletCollection property="flagViews" destination="mED-e0-UT6" collectionClass="NSMutableArray" id="xdU-C0-BL1"/>
+                        <outletCollection property="flagViews" destination="eb7-Zo-VFo" collectionClass="NSMutableArray" id="VsH-Nw-PfK"/>
+                        <outletCollection property="flagViews" destination="Sb5-4g-ntR" collectionClass="NSMutableArray" id="CLk-8d-RLv"/>
+                        <outletCollection property="flagViews" destination="r0C-KD-3Mh" collectionClass="NSMutableArray" id="4iD-id-Ciq"/>
+                        <outletCollection property="flagViews" destination="1bI-5O-zna" collectionClass="NSMutableArray" id="thv-wa-8XL"/>
+                        <outletCollection property="flagViews" destination="EQS-dk-kFq" collectionClass="NSMutableArray" id="Y5B-8d-fQz"/>
+                        <outletCollection property="flagViews" destination="rJ0-V8-JeP" collectionClass="NSMutableArray" id="Lmc-gI-3Sd"/>
+                        <outletCollection property="flagViews" destination="nTX-vL-VqQ" collectionClass="NSMutableArray" id="dHn-8a-DHl"/>
+                        <outletCollection property="flagViews" destination="TrO-Iu-vkM" collectionClass="NSMutableArray" id="6K2-fW-qAP"/>
+                        <outletCollection property="flagViews" destination="FSZ-hg-9ZT" collectionClass="NSMutableArray" id="jko-re-fmC"/>
+                        <outletCollection property="flagViews" destination="cNB-gQ-j64" collectionClass="NSMutableArray" id="2b0-d3-kjn"/>
+                        <outletCollection property="flagViews" destination="02U-SO-hbk" collectionClass="NSMutableArray" id="Hog-8i-d8O"/>
+                        <outletCollection property="flagViews" destination="fUC-pn-c3o" collectionClass="NSMutableArray" id="RmM-Q3-Kxl"/>
+                        <outletCollection property="flagViews" destination="fxS-Ac-JJ5" collectionClass="NSMutableArray" id="jaJ-0a-x5d"/>
+                        <outletCollection property="flagViews" destination="3Jx-Fl-J8L" collectionClass="NSMutableArray" id="fF1-0z-JHr"/>
+                        <outletCollection property="flagViews" destination="Mgr-Qn-d3G" collectionClass="NSMutableArray" id="jJM-ia-lXJ"/>
+                        <outletCollection property="flagViews" destination="ulz-h8-yhY" collectionClass="NSMutableArray" id="R3M-f3-FDt"/>
+                        <outletCollection property="flagViews" destination="ieX-me-Sov" collectionClass="NSMutableArray" id="qbb-we-Cfs"/>
+                        <outletCollection property="flagViews" destination="5TV-LC-56X" collectionClass="NSMutableArray" id="qQZ-zf-a6x"/>
+                        <outletCollection property="flagViews" destination="NvP-nc-t08" collectionClass="NSMutableArray" id="WNe-q2-x5u"/>
+                        <outletCollection property="flagViews" destination="cjh-2v-Y0C" collectionClass="NSMutableArray" id="qRD-dI-vRd"/>
+                        <outletCollection property="flagViews" destination="jeU-5P-xq0" collectionClass="NSMutableArray" id="CEZ-8C-Lvs"/>
+                        <outletCollection property="flagViews" destination="O3N-3r-rnO" collectionClass="NSMutableArray" id="QVQ-ET-Xv8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sJ6-Z6-fIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -634,6 +1207,6 @@
         <image name="usa" width="2006" height="1258"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Tzc-CY-Nwy"/>
+        <segue reference="Zuw-Hv-cVW"/>
     </inferredMetricsTieBreakers>
 </document>

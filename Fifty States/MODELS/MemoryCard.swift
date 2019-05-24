@@ -13,7 +13,6 @@ struct MemoryCard {
     
     
     var stateID: Int
-//    var isFaceUp = false
     var isMatched = false {
         didSet {
             print ("is matched = \(self.isMatched)")

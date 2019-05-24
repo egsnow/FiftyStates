@@ -17,7 +17,7 @@ struct MemoryGame {
     var currentStates = [Int]()
     var selectedStateIDs = [Int]()
     let synthesizer = AVSpeechSynthesizer()
-    var isOVer: Bool {
+    var isOver: Bool {
         get {
             for card in cards {
                 if !card.isMatched {
@@ -51,7 +51,7 @@ struct MemoryGame {
             cards.append(newCard)
             cards.append(newCard)
         }
-//        shuffleCards()
+        shuffleCards()
         printCards()
     }
     
@@ -76,15 +76,10 @@ struct MemoryGame {
             if cards[firstCardIndex].stateID == cards[secondCardIndex].stateID {
                 cards[firstCardIndex].isMatched = true
                 cards[secondCardIndex].isMatched = true
-                if isOVer {
-                    playSound("win")
-                }
             } else if cards[firstCardIndex].stateID != cards[secondCardIndex].stateID {
-                cards[firstCardIndex].isMatched = false
-                cards[secondCardIndex].isMatched = false
+                print("still false")
             }
-        } else {
-        }
+        } 
         firstCardIndexSelected = cardNumber
     }
     

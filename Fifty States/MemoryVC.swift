@@ -13,8 +13,9 @@ class MemoryVC: UIViewController {
     
     @IBOutlet var cardButtons: [UIButton]!
     @IBOutlet var dealCardsButton: UIButton!
+    @IBOutlet var flagViews: [UIView]!
     
-    
+  
     var game: MemoryGame!
     let defaultImage = UIImage.init(named: "flagbacks1")
     var selectedCardsIndexes = [Int]()
@@ -77,19 +78,21 @@ class MemoryVC: UIViewController {
                 if self.game.cards[cardLocation].isMatched == true {
                         for cardIndex in self.selectedCardsIndexes {
                             self.cardButtons[cardIndex].isHidden = true
-                            playSound("correct")
-                            //FIXME: WHEN NO CARDS LEFT PLAY "WIN" SOUND
+                            if self.game.isOver {
+                                playSound("win")
+                            } else {
+                                playSound("correct")
+                            }
                         }
                     } else if self.game.cards[cardLocation].isMatched == false {
                         playSound("wrong")
                         for cardIndex in self.selectedCardsIndexes {
-                            self.cardButtons[cardIndex].setBackgroundImage(self.defaultImage, for: .normal)
+                        self.cardButtons[cardIndex].setBackgroundImage(self.defaultImage, for: .normal)
                         }
                     }
                     self.selectedCardsIndexes.removeAll()
                 }
-            } else {
-            }
+            } 
         }
         
     
@@ -98,7 +101,16 @@ class MemoryVC: UIViewController {
         }
         
         
-        
+    func hideFlag() {
+        for view in flagViews {
+            view.layer.cornerRadius = 10
+            view.layer.masksToBounds = true
+            view.layer.borderWidth = 3
+            view.layer.borderColor = UIColor.white.cgColor
+        }
+    }
+    
+    
 }
 
 
